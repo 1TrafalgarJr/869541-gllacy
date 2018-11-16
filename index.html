@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>Gllacy Shop</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="header-logo" href="">
+					<img src="" width="200" height="100" alt="Логотип магазина "Gllacy Shop"> <!-- -->
+			    </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+				<ul class="site-navigation">
+					<li><a href="">Каталог</a></li>
+					<li><a href="">Доставка и оплата</a></li>
+					<li><a href="">О Компании</a></li>
+				</ul>
 
-  </body>
+				<button class="search-button">Поиск</button>
+				<button class="input-button">Вход</button>
+				<button class="blank-button">Пусто</button>
+
+			</nav>
+		</header>
+
+		<main class="main-content"> 
+			<section class="section-content">
+				<h2 class="visually-hidden">Описание магазина Глэйси</h2>
+				<p class="description">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+				<ul class="description-list">
+					<li class="list-left">Все наше мороженое изготовляется на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li><!--перечень слева-->
+					<li class="list-left">Для приготовления мороженого используются настоящие сливки и молоко вясочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li><!--перечень слева-->
+					<li class="list-right">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li><!--перечень справа-->
+					<li class="list-right">Доставка нашего мороженого до закажчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li><!--перечень справа-->
+				</ul>
+			</section>	
+
+			<article class="new-blog"> 
+				<h2 class="visually-hidden">Новости блога</h2>
+				<h2>Новое в нашем блоге</h2><!--размер текста поменять при помощи стилей(если такой вариант правильный)-->
+				<a href="">10 способов сервировки фруктовых щербетов к столу</a><!--тоже как вариант размер шрифта поменять при помощи сss стилей)-->
+			</article>
+
+			<form class="form-section">
+				<h2 class="visually-hidden">Рассылка новостей</h2>
+				<p class="mailing-of-letters">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+				<label for="email"></label>
+         		<input type="email" name="email" pattern="" placeholder="Электронная почта" required>
+				<div class="buttons">
+					<input type="submit" name="buttons" value="Отправить">
+				</div>
+			</form>
+
+
+		</main>
+
+		<footer class="main-footer">
+			<div class="footer-social">
+				<ul class="ul-solial">
+					<li><a class="social-button" href=""></a>Twitter</li>
+					<li><a class="social-button" href=""></a>Instagram</li>
+					<li><a class="social-button" href=""></a>Facebook</li>
+					<li><a class="social-button" href=""></a>Вконтакте</li>
+				</ul>
+			</div>
+			<ul class="фdditional-шnformation">
+				<li><a class="suppliers" href=""></a>Для поставщиков</li>
+				<li><a class="production" href=""></a>О производстве</li>
+				<li><a class="documents" href=""></a>Наши документы</li>
+				<li><a class="environmental-standards" href=""></a>Экологические стандарты</li>
+			</ul>
+
+			<a class="html-academy" href="">
+				<img src="" width="200" height="100" alt="Логотип HTML Academy">
+			</a>
+			<p>Сделано в <a class="link-html-academy" href="">HTML Academy</a>2018
+			</p>
+		</footer>
+	</body>
 </html>
