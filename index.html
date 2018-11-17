@@ -7,20 +7,19 @@
 	<body>
 		<header class="main-header">
 			<nav class="main-navigation">
-				<a class="header-logo" href="">
-					<img src="" width="200" height="100" alt="Логотип магазина "Gllacy Shop"> <!-- -->
+				<a class="header-logo" href="#">
+					<img src="" width="200" height="100" alt="Логотип магазина Gllacy Shop"> <!-- -->
 			    </a>
 
 				<ul class="site-navigation">
-					<li><a href="">Каталог</a></li>
-					<li><a href="">Доставка и оплата</a></li>
-					<li><a href="">О Компании</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">О Компании</a></li>
 				</ul>
 
 				<button class="search-button">Поиск</button>
 				<button class="input-button">Вход</button>
-				<button class="blank-button">Пусто</button>
-
+				<button class="basket basket-blank">Пусто</button>
 			</nav>
 		</header>
 
@@ -34,48 +33,49 @@
 					<li class="list-right">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li><!--перечень справа-->
 					<li class="list-right">Доставка нашего мороженого до закажчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li><!--перечень справа-->
 				</ul>
-			</section>	
+			</section>
 
 			<article class="new-blog"> 
 				<h2 class="visually-hidden">Новости блога</h2>
 				<h2>Новое в нашем блоге</h2><!--размер текста поменять при помощи стилей(если такой вариант правильный)-->
-				<a href="">10 способов сервировки фруктовых щербетов к столу</a><!--тоже как вариант размер шрифта поменять при помощи сss стилей)-->
+				<a href="#">10 способов сервировки фруктовых щербетов к столу</a><!--тоже как вариант размер шрифта поменять при помощи сss стилей)-->
 			</article>
 
-			<form class="form-section">
+			<form class="form-section" action="catalog.html">
 				<h2 class="visually-hidden">Рассылка новостей</h2>
-				<p class="mailing-of-letters">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 				<label for="email"></label>
-         		<input type="email" name="email" pattern="" placeholder="Электронная почта" required>
+         		<input type="email" name="email" placeholder="Электронная почта" required>
 				<div class="buttons">
 					<input type="submit" name="buttons" value="Отправить">
 				</div>
 			</form>
 
-
 		</main>
 
-		<footer class="main-footer">
-			<div class="footer-social">
+		<footer class="footer">
+			<div class="footer-social"><!--дивом оставить? или через section будет правильнее?-->
 				<ul class="ul-solial">
-					<li><a class="social-button" href=""></a>Twitter</li>
-					<li><a class="social-button" href=""></a>Instagram</li>
-					<li><a class="social-button" href=""></a>Facebook</li>
-					<li><a class="social-button" href=""></a>Вконтакте</li>
+					<li><a href="#" class="social-button">Twitter</a></li>
+					<li><a href="#" class="social-button">Instagram</a></li>
+					<li><a href="#" class="social-button">Facebook</a></li>
+					<li><a href="#" class="social-button">Вконтакте</a></li>
 				</ul>
 			</div>
-			<ul class="фdditional-шnformation">
-				<li><a class="suppliers" href=""></a>Для поставщиков</li>
-				<li><a class="production" href=""></a>О производстве</li>
-				<li><a class="documents" href=""></a>Наши документы</li>
-				<li><a class="environmental-standards" href=""></a>Экологические стандарты</li>
-			</ul>
-
-			<a class="html-academy" href="">
+            <div>
+			     <ul class="additional-information">
+				    <li><a href="#" class="iconed">Для поставщиков</a></li>
+				    <li><a href="#">О производстве</a></li>
+				    <li><a href="#">Наши документы</a></li>
+				    <li><a href="#">Экологические стандарты</a></li>
+			     </ul>
+            </div>
+    
+			<a href="#">
 				<img src="" width="200" height="100" alt="Логотип HTML Academy">
 			</a>
-			<p>Сделано в <a class="link-html-academy" href="">HTML Academy</a>2018
-			</p>
+			<p>Сделано в <a href="#">HTML Academy</a> 2018</p>
+
 		</footer>
 	</body>
 </html>
