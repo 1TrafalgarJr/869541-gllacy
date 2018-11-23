@@ -9,9 +9,10 @@
     <header class="main-header">
       <img src="img/logo1.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop"> <!--по заданию лого на главной странице, не должно быть ссылкой.-->
       <nav class="main-navigation">
-        <ul class="site-navigation">
+        <ul>
 
-          <li><a href="#">Каталог</a><!--всплывающее окно-->
+          <li>
+            <a href="#">Каталог</a><!--всплывающее окно-->
             <ul class="site-navigation-ul">
               <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -25,9 +26,37 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         
-        <button class="search-button">Поиск</button>
-        <button class="input-button">Вход</button>
+        <div class="search-button">
+          <a class="search-click" href="#">Поиск</a>
+            <div class="input-field-off"><!--всплывающий поиск-->
+              <div class="input-field-on">
+                <form class="search" method="post" action="https://echo.htmlacademy.ru">
+                  <input id="search" type="text" name="search" placeholder="Что ищем?">
+                  <label for="search">Что ищем?</label>
+                </form>
+              </div>
+            </div>
+        </div>
+
+        <div class="input-button">
+          <a class="input-click" href="#">Вход</a>
+          <div class="form-input"><!--форма открывается-->
+            <form class="user" method="post" action="https://echo.htmlacademy.ru">
+              <div>
+                <input id="user-email" type="text" name="email" placeholder="Электронная почта" required>
+                <label for="user-email">Электронная почта</label>
+              </div>
+              <div>
+                <input id="user-password" type="password" name="password" placeholder="Пароль" required>
+                <label for="user-password">Пароль</label>
+              </div>
+              <button class="button">Войти</button>
+            </form>
+          </div>
+        </div>
+
         <button class="basket basket-blank">Пусто</button>
+
       </nav>
     </header>
 
@@ -41,18 +70,18 @@
         <!--картинки-слайды-->
         <div class="slide">
           <p>Крем-брюле и пломбир с малиновым джемом</p>
-          <a class="button" href="#">Давайте оба!</a>
+          <a href="#" class="button">Давайте оба!</a>
         </div>
         <div class="slide">
           <!--этот и след. див должны быть скрыты-->
           <p>Шоколадный пломбир и лимонный сорбет</p>
           <!--название мороженого на 2 слайде-->
-          <a class="button" href="#">Давайте оба!</a>
+          <a href="#" class="button">Давайте оба!</a>
         </div>
         <div class="slide">
           <p>Пломбир с помадкой и клубничный щербет</p>
           <!--назв на 3 слайде-->
-          <a class="button" href="#">Давайте оба!</a>
+          <a href="#" class="button">Давайте оба!</a>
         </div>
         <div class="slide-buttons">
           <label for="btn-1"></label>
@@ -152,11 +181,11 @@
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a><!--тоже как вариант размер шрифта поменять при помощи сss стилей)-->
       </article>
 
-      <form class="form-section" action="catalog.html">
+      <form class="form-section" method="post" action="https://echo.htmlacademy.ru">
         <!--фон через css-->
         <h2 class="visually-hidden">Рассылка новостей</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <input type="email" name="email" placeholder="Электронная почта" required>
+        <input id="email" type="email" name="email" placeholder="Электронная почта" required>
         <label for="email">Электронная почта</label>
         <button class="button">Отправить</button>
       </form>
@@ -169,6 +198,24 @@
           <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
           <p>Для заказов по телефону: 8 812 450-25-25 (с 10 до 20 ежедневно)</p>
           <a href="#" class="button">Форма обротной связи</a>
+          <div class="latent-form"><!--открывается скрытая форма-->
+            <p>Мы обязательно вам ответим!</p>
+            <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
+              <div>
+                <input id="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?" required>
+                <label for="feedback-name">Как вас зовут?</label>
+              </div>
+              <div>
+                <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
+                <label for="feedback-email">Ваша почта для ответа?</label>
+              </div>
+              <div>
+                <input id="feedback-question" type="text" name="feedback-question" placeholder="Напишите что-нибудь..." required>
+                <label for="feedback-question">Напишите что-нибудь...</label>
+              </div>
+              <button class="button">Отправить</button>
+            </form>
+          </div>
         </section>
       </div>
     </main>
