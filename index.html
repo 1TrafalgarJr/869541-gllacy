@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <img src="img/logo1.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop"> <!--по заданию лого на главной странице, не должно быть ссылкой.-->
+      <img src="img/logo1.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop">
       <nav class="main-navigation">
         <ul>
 
@@ -27,32 +27,26 @@
         </ul>
         
         <div class="search-button">
-          <a class="search-click" href="#">Поиск</a>
-            <div class="input-field-off"><!--всплывающий поиск-->
-              <div class="input-field-on">
-                <form class="search" method="post" action="https://echo.htmlacademy.ru">
-                  <input id="search" type="text" name="search" placeholder="Что ищем?">
-                  <label for="search">Что ищем?</label>
-                </form>
-              </div>
-            </div>
+          <button class="search-click" href="#">Поиск</button>
+          <form class="search" method="post" action="https://echo.htmlacademy.ru">
+            <input id="search" type="text" name="search" placeholder="Что ищем?">
+            <label for="search">Что ищем?</label>
+          </form>
         </div>
 
         <div class="input-button">
           <a class="input-click" href="#">Вход</a>
-          <div class="form-input"><!--форма открывается-->
-            <form class="user" method="post" action="https://echo.htmlacademy.ru">
-              <div>
-                <input id="user-email" type="text" name="email" placeholder="Электронная почта" required>
-                <label for="user-email">Электронная почта</label>
-              </div>
-              <div>
-                <input id="user-password" type="password" name="password" placeholder="Пароль" required>
-                <label for="user-password">Пароль</label>
-              </div>
-              <button class="button">Войти</button>
-            </form>
-          </div>
+          <form class="user" method="post" action="https://echo.htmlacademy.ru">
+            <div>
+              <input id="user-email" type="text" name="email" placeholder="Электронная почта" required>
+              <label for="user-email">Электронная почта</label>
+            </div>
+            <div>
+              <input id="user-password" type="password" name="password" placeholder="Пароль" required>
+              <label for="user-password">Пароль</label>
+            </div>
+            <button class="button">Войти</button>
+          </form>
         </div>
 
         <button class="basket basket-blank">Пусто</button>
@@ -209,7 +203,7 @@
                 <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
                 <label for="feedback-email">Ваша почта для ответа?</label>
               </div>
-              <div>
+              <div><!--как вариант эту часть формы сделать textarea-->
                 <input id="feedback-question" type="text" name="feedback-question" placeholder="Напишите что-нибудь..." required>
                 <label for="feedback-question">Напишите что-нибудь...</label>
               </div>
@@ -224,10 +218,10 @@
       <div class="footer-social">
         <!--дивом оставить? или через section будет правильнее?-->
         <ul class="ul-solial">
-          <li><a href="#" class="social-button"><img src="img/twitter.svg">Twitter</a></li>
-          <li><a href="#" class="social-button"><img src="img/instagram.svg">Instagram</a></li>
-          <li><a href="#" class="social-button"><img src="img/fb.svg">Facebook</a></li>
-          <li><a href="#" class="social-button"><img src="img/vk.svg">Вконтакте</a></li>
+          <li><a href="#" class="social-button" aria-label="Ссылка на Твиттер"><img src="img/twitter.svg">Twitter</a></li>
+          <li><a href="#" class="social-button" aria-label="Ссылка на Инстаграм"><img src="img/instagram.svg">Instagram</a></li>
+          <li><a href="#" class="social-button" aria-label="Ссылка на Фейсбук"><img src="img/fb.svg">Facebook</a></li>
+          <li><a href="#" class="social-button" aria-label="Ссылка Вконтакте"><img src="img/vk.svg">Вконтакте</a></li>
         </ul>
       </div>
 
