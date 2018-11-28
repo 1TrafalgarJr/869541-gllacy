@@ -3,59 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>Gllacy Shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900&amp;subset=cyrillic,cyrillic-ext">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
+
   <body>
     <header class="main-header">
       <a href="index.html">
-        <img src="img/logo1.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop"> 
+        <img src="img/logo1.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop">
       </a>
       <nav class="main-navigation">
-        <ul>
+        <ul class="site-navigation">
 
-          <li>
-            <a href="#">Каталог</a><!--всплывающее окно-->
-            <ul class="site-navigation-ul">
-              <li><a href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a class="active">Щербеты</a></li>
-              <li><a href="#">Фруктовый лёд</a></li>
-              <li><a href="#">Мелорин</a></li>
+          <li class="navigation-li">
+            <a class="active-page" href="#">Каталог</a><!--всплывающее окно-->
+            <ul class="main-navigation-ul">
+              <li><span class="main-navigation-span">Новинки</span></li>
+              <li><a class="none" href="catalog.html">Сливочное</a></li>
+              <li><a class="none active">Щербеты</a></li>
+              <li><a class="none" href="#">Фруктовый лёд</a></li>
+              <li><a class="none" href="#">Мелорин</a></li>
             </ul>
           </li>
 
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
-        
+      </nav>
+
+      <div class="oll-buttons">
         <div class="search-button">
-          <button class="search-click">Поиск</button>
-          <form class="search" method="post" action="https://echo.htmlacademy.ru">
+          <button class="btn btn-search">
+            Поиск
+          </button>
+          <form class="search hiden" method="post" action="https://echo.htmlacademy.ru">
             <input id="search" type="text" name="search" placeholder="Что ищем?">
-            <label for="search">Что ищем?</label>
+            <label class="hiden" for="search">Что ищем?</label>
           </form>
         </div>
 
         <div class="input-button">
-          <a class="input-click" href="#">Вход</a>
-          <div class="form-input"><!--форма открывается-->
-            <form class="user" method="post" action="https://echo.htmlacademy.ru">
-              <div>
-                <input id="user-email" type="text" name="email" placeholder="Электронная почта" required>
-                <label for="user-email">Электронная почта</label>
-              </div>
-              <div>
-                <input id="user-password" type="password" name="password" placeholder="Пароль" required>
-                <label for="user-password">Пароль</label>
-              </div>
-              <button class="button">Войти</button>
-            </form>
-          </div>
+          <a class="btn btn-click none" href="#">Вход</a>
+          <form class="hiden user" method="post" action="https://echo.htmlacademy.ru">
+            <div>
+              <input id="user-email" type="text" name="email" placeholder="Электронная почта" required>
+              <label  class="hiden" for="user-email">Электронная почта</label>
+            </div>
+            <div>
+              <input id="user-password" type="password" name="password" placeholder="Пароль" required>
+              <label  class="hiden" for="user-password">Пароль</label>
+            </div>
+            <div>
+              <a href="#" class="restore">Забыли пароль?</a>
+              <a href="#" class="new-registration">Новая регистрация</a>
+            </div>
+            <button class="button" type="submit">Войти</button>
+          </form>
         </div>
 
         <div class="basket-button">
-          <button class="basket-description">2 товара</button><!--кнопка или ссылка?-->
-          <div class="basket-hidden"><!--скрытая корзина-->
+          <button class="btn-blank btn-bask">2 товара</button><!--кнопка или ссылка?-->
+          <div class="basket-hidden hiden"><!--скрытая корзина-->
             <div class="basket-name-merchandise"><!--класс-имя товара-->
               <img src="img/1-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
               Пломбир с апельсиновым джемом
@@ -82,22 +91,23 @@
             <div class="basket-total">
               Итого: 750руб.
             </div>
-            <a href="#" class="button">Оформить заказ</a>
+            <a href="#" class="button none">Оформить заказ</a>
           </div>
         </div>
-
-      </nav>
+      </div>
     </header>
 
     <main class="main-content">
-      <div class="working_data">
+      <div class="working-data">
         <p>С 10 до 20, ежедневно</p>
         <p>8 812 450-25-25</p>
       </div>
 
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
+        »
         <li><a href="#">Каталог</a></li>
+        »
         <li><a>Сливочное</a></li>
       </ul>
 
@@ -169,9 +179,9 @@
         <button class="button-filters">Применить</button>
       </form>
 
-      <section class="catalog">
+      <div class="main-products">
         <h2 class="visually-hidden">Список сливочного мороженого</h2>
-        <ul class="catalog-list">
+        <ul class="products">
           <li class="catalog-item">
             <a href="#">
               <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -328,17 +338,17 @@
             <li class="pagination-item"><a href="#">&gt</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="footer-social">
         <!--дивом оставить? или через section будет правильнее?-->
-        <ul class="ul-solial">
-          <li><a href="#" class="social-button"><img src="img/twitter.svg">Twitter</a></li>
-          <li><a href="#" class="social-button"><img src="img/instagram.svg">Instagram</a></li>
-          <li><a href="#" class="social-button"><img src="img/fb.svg">Facebook</a></li>
-          <li><a href="#" class="social-button"><img src="img/vk.svg">Вконтакте</a></li>
+        <ul class="ul-social">
+          <li><a href="#" class="social-button" aria-label="Ссылка на Твиттер"><img src="img/twitter.svg">Twitter</a></li>
+          <li><a href="#" class="social-button" aria-label="Ссылка на Инстаграм"><img src="img/instagram.svg">Instagram</a></li>
+          <li><a href="#" class="social-button" aria-label="Ссылка на Фейсбук"><img src="img/fb.svg">Facebook</a></li>
+          <li><a href="#" class="social-button" aria-label="Ссылка Вконтакте"><img src="img/vk.svg">Вконтакте</a></li>
         </ul>
       </div>
 
@@ -351,7 +361,7 @@
         </ul>
       </div>
 
-      <a href="#">
+      <a href="#" class="logo">
       <img src="img/logo-htmlacademy.svg" width="200" height="100" alt="Логотип HTML Academy">
       </a>
       <p>Сделано в <a href="#">HTML Academy</a> 2018</p>
