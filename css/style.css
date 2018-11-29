@@ -36,20 +36,31 @@ a {
 }
 
 /*header-index.html*/
+
+.main-navigation {
+  float: left;
+}
+
+.header-logo {
+  position: relative;
+  left: -5px;
+  float: left;
+}
+
 .main-navigation a {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 22px;
   display: block;
 }
 
-.main-navigation-span {/*новинки*/
+.main-navigation-span {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   color: black;
 }
 
-.main-navigation-ul a {/*внутри каталога на гл странице*/
+.main-navigation-ul a {
   display: block;
   font-size: 14px;
   line-height: 16px;
@@ -57,27 +68,48 @@ a {
 }
 
 .main-navigation a:hover,
-.main-navigation a:focus { /*смена цвета при наведении и табе*/
+.main-navigation a:focus { 
   background-color: #f7f6f3;
   color: black;
   text-decoration: none;
 }
 
-.main-navigation-ul a.active:hover {/*щербеты при наведении*/
+.main-navigation-ul a.active:hover {
   background-color: #fbded7;
   color: black;
 }
 
-.main-navigation-ul a.active:active {/*щербеты при нажатии*/
+.main-navigation-ul a.active:active {
   background-color: #f6b5a5;
   color: black;
 }
 
-.main-navigation-ul a.active { /*находимся на странице*/
+.main-navigation-ul a.active {
   background-color: #d07058;
   color: white;
 }
 
+.site-navigation {
+  float: left;
+}
+.site-navigation li{
+  position: relative;
+
+}
+.site-navigation a {
+  display: block;
+  font-size: 16px
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.navigation-li>a::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(255,255,255,.4);
+}
 .site-navigation li:active {
   box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
@@ -95,27 +127,47 @@ a {
   color: #ffffff;
 }
 
+/*Поиск, Вход, Корзина*/
+.search-button {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.input-button {
+  position: relative;
+  display: inline-block;
+}
+
+.basket-button {
+  position: relative;
+  display: inline-block;
+}
+/*время работы и тел*/
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*кнопки с классами btn, button*/
 .button:hover, /*кнопка при наведении*/
 .button-form:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   font-weight: bold;
   box-shadow: 0px 1px 2px 0 #ac1000;
   background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
 
-.button:active, /*активная кнопка*/
+.button:active, /*нажали на кнопку*/
 .button-form:active {
   box-shadow: inset 0px 2px 2px 0 #942718;
   background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
- .button:hover {/*кнопка при наведении*/
-  background-image: linear-gradient(#f58669, #ec6f5e);
-  color: white;
-  background-color: inherit;
- }
+
 .button-form {/*кнопка рассылки*/
   width: 129px;
   height: 44px;
@@ -191,16 +243,10 @@ a {
 }
 
 
-/*
-.oll-buttons:before { 
-  content: "";
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  background-image: url("../img/search222.png");
-  background-repeat: no-repeat;
+.oll-buttons { 
+  float: right;
 }
-*/
+
 
 .search-button button, 
 .input-button a { /*Поиск и Вход*/
@@ -248,15 +294,14 @@ a {
 }
 
 /*слайдер на глайной стр*/
-.main-banner p {/*текст посреди слайда*/
-  text-align: center;
-  font-weight: 900;
+.slide-title {
+  width: 629px;
   font-size: 60px;
+  font-weight: bold;
   line-height: 60px;
-  color: white;
 }
 
-.main-banner a {/*ссылка Дайте оба*/
+.slider a {/*ссылка Дайте оба*/
   text-shadow: 0px 2px 5px #a0200b;
   font-size: 32px;
   font-weight: bold;
@@ -268,7 +313,8 @@ a {
   padding: 9px 31px 10px 31px;
 }
 
-.slide-btn {/*переключатели слайда*/
+.slide-radio button{/*переключатели слайда*/
+  display: inline-block;
   width: 20px;
   height: 20px;
   border: 2px solid #ffffff;
@@ -330,8 +376,7 @@ a {
 
 .catalog-item { /*название каждой ЛИ в main-products*/
   display: inline-block;
-  width: 25%;
-  float: left;
+  width: 22%;
   position: relative;
 }
 

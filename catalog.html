@@ -7,101 +7,109 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-
   <body>
     <header class="main-header">
-      <a href="index.html">
-        <img src="img/logo1.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop">
-      </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-
-          <li class="navigation-li">
-            <a class="active-page" href="#">Каталог</a><!--всплывающее окно-->
-            <ul class="main-navigation-ul">
-              <li><span class="main-navigation-span">Новинки</span></li>
-              <li><a class="none" href="catalog.html">Сливочное</a></li>
-              <li><a class="none active">Щербеты</a></li>
-              <li><a class="none" href="#">Фруктовый лёд</a></li>
-              <li><a class="none" href="#">Мелорин</a></li>
-            </ul>
-          </li>
-
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Компании</a></li>
-        </ul>
-      </nav>
-
-      <div class="oll-buttons">
-        <div class="search-button">
-          <button class="btn btn-search">
-            Поиск
-          </button>
-          <form class="search hiden" method="post" action="https://echo.htmlacademy.ru">
-            <input id="search" type="text" name="search" placeholder="Что ищем?">
-            <label class="hiden" for="search">Что ищем?</label>
-          </form>
-        </div>
-
-        <div class="input-button">
-          <a class="btn btn-click none" href="#">Вход</a>
-          <form class="hiden user" method="post" action="https://echo.htmlacademy.ru">
-            <div>
-              <input id="user-email" type="text" name="email" placeholder="Электронная почта" required>
-              <label  class="hiden" for="user-email">Электронная почта</label>
-            </div>
-            <div>
-              <input id="user-password" type="password" name="password" placeholder="Пароль" required>
-              <label  class="hiden" for="user-password">Пароль</label>
-            </div>
-            <div>
-              <a href="#" class="restore">Забыли пароль?</a>
-              <a href="#" class="new-registration">Новая регистрация</a>
-            </div>
-            <button class="button" type="submit">Войти</button>
-          </form>
-        </div>
-
-        <div class="basket-button">
-          <button class="btn-blank btn-bask">2 товара</button><!--кнопка или ссылка?-->
-          <div class="basket-hidden hiden"><!--скрытая корзина-->
-            <div class="basket-name-merchandise"><!--класс-имя товара-->
-              <img src="img/1-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-              Пломбир с апельсиновым джемом
-            </div>
-            <div class="basket-quantity-merchandise"><!--класс-количество товара-->
-              1,5 кг х
-              <span class="grey-colour">200 руб.</span>
-            </div>
-            <div class="basket-worth">
-              300 руб.
-            </div>
-
-            <div class="basket-name-merchandise"><!--класс-имя товара-->
-              <img src="img/2-1.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-              Клубничный пломбир с присыпкой из белого шоколада
-            </div>
-            <div class="basket-quantity-merchandise"><!--класс-количество товара-->
-              1,5 кг х
-              <span class="grey-colour">300 руб.</span>
-            </div>
-            <div class="basket-worth">
-              450 руб.
-            </div>
-            <div class="basket-total">
-              Итого: 750руб.
-            </div>
-            <a href="#" class="button none">Оформить заказ</a>
+      <div class="row">
+        <nav class="main-navigation">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="img/logo1.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop">
+            </a>
           </div>
+          <ul class="site-navigation">
+            <li class="navigation-li">
+              <a href="#">Каталог</a><!--всплывающее окно-->
+              <ul class="main-navigation-ul">
+                <li><span class="main-navigation-span">Новинки</span></li>
+                <li><a class="none" href="catalog.html">Сливочное</a></li>
+                <li><a class="none active">Щербеты</a></li>
+                <li><a class="none" href="#">Фруктовый лёд</a></li>
+                <li><a class="none" href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="navigation-li">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="navigation-li">
+              <a href="#">О Компании</a>
+           </li>
+          </ul>
+        </nav>
+
+        <div class="oll-buttons">
+          <div class="search-button">
+            <button class="btn btn-search">
+              Поиск
+            </button>
+            <form class="search hiden" method="post" action="https://echo.htmlacademy.ru">
+              <input id="search" type="text" name="search" placeholder="Что ищем?">
+              <label class="hiden" for="search">Что ищем?</label>
+            </form>
+          </div>
+
+          <div class="input-button">
+            <a class="btn btn-click none" href="#">Вход</a>
+            <form class="hiden user" method="post" action="https://echo.htmlacademy.ru">
+              <div>
+                <input id="user-email" type="text" name="email" placeholder="Электронная почта" required>
+                <label  class="hiden" for="user-email">Электронная почта</label>
+              </div>
+              <div>
+                <input id="user-password" type="password" name="password" placeholder="Пароль" required>
+                <label  class="hiden" for="user-password">Пароль</label>
+              </div>
+              <div>
+                <a href="#" class="restore">Забыли пароль?</a>
+                <a href="#" class="new-registration">Новая регистрация</a>
+              </div>
+              <button class="button" type="submit">Войти</button>
+            </form>
+          </div>
+
+          <div class="basket-button">
+            <button class="btn-blank btn-bask">2 товара</button><!--кнопка или ссылка?-->
+            <div class="basket-hidden hiden"><!--скрытая корзина-->
+              <div class="basket-name-merchandise"><!--класс-имя товара-->
+                <img src="img/1-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                Пломбир с апельсиновым джемом
+              </div>
+              <div class="basket-quantity-merchandise"><!--класс-количество товара-->
+                1,5 кг х
+                <span class="grey-colour">200 руб.</span>
+              </div>
+              <div class="basket-worth">
+                300 руб.
+              </div>
+
+              <div class="basket-name-merchandise"><!--класс-имя товара-->
+                <img src="img/2-1.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                Клубничный пломбир с присыпкой из белого шоколада
+              </div>
+              <div class="basket-quantity-merchandise"><!--класс-количество товара-->
+                1,5 кг х
+                <span class="grey-colour">300 руб.</span>
+              </div>
+              <div class="basket-worth">
+                450 руб.
+              </div>
+              <div class="basket-total">
+                Итого: 750руб.
+              </div>
+              <a href="#" class="button none">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="working-data">
+          <p class="header-work">С 10 до 20, ежедневно</p>
+          <p class="header-phone">8 812 450-25-25</p>
         </div>
       </div>
     </header>
 
     <main class="main-content">
-      <div class="working-data">
-        <p>С 10 до 20, ежедневно</p>
-        <p>8 812 450-25-25</p>
-      </div>
 
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
