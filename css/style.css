@@ -130,12 +130,12 @@ a {
 /*Поиск, Вход, Корзина*/
 .search-button {
   position: relative;
-  display: inline-block;
+  float: left;
 }
 
 .input-button {
   position: relative;
-  display: inline-block;
+  float: left;
 }
 
 .basket-button {
@@ -152,18 +152,53 @@ a {
 .btn {
   border-radius: 50px;
   border-width: 0;
+  cursor: pointer;
+  padding: 0;
 }
 
 .btn-top {
-  background-color: #fff;
+  position: relative;
+  background-color: transparent;
   height: 33px;
-  opacity: .2;
   color: #fff;
 }
 
+.btn-top:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  display: block;
+  background-color: #fff;
+  content: "";
+  opacity: .2;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-top span {
+  display: block;
+  margin-top:3px;
+  float: left;
+  margin-left:7px;
+}
+
 .btn-top:hover {
-  color: #f8f7f4;
-  opacity: 1;
+  background-color: #f8f7f4;
+  color: #000;
+}
+
+.login-icon {
+  background-image: url(../img/name1.png);
+  display: block;
+  float: left;
+  width: 21px;
+  height: 19px;
+  margin-left:16px;
+}
+
+.btn-top:hover .login-icon {
+  background-image: url(../img/name2.png);
 }
 
 /*кнопки с классами btn, button*/
