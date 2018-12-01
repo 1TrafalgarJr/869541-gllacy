@@ -18,6 +18,10 @@ a {
   color: white;
 }
 
+h3 {
+  margin: 0;
+}
+
 .none {
   text-decoration: none;
 }
@@ -158,23 +162,19 @@ a {
   color: #ffffff;
 }
 
-.oll-buttons {
+.header-buttons {
   float: right;
   margin-top: 12px;
-  text-align: right;
-  display: flex;
 }
 
-.search-button {
+.header-button {
   position: relative;
   float: left;
 }
 
-.search-btn {
-  font-size: 0;
-  padding: 0 8px;
+.header-button + .header-button {
+  margin-left: 10px;
 }
-
 /*
 .search-button input:hover {
   background-color: white;
@@ -189,38 +189,30 @@ a {
 } */
 
 .btn {
+  position: relative;
   border-radius: 50px;
   border-width: 0;
   cursor: pointer;
   padding: 0;
+  white-space: nowrap;
+}
+
+.btn-main {
+  opacity: 0.99;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 22px 14px 21px;
+  text-decoration: none;
 }
 
 .btn-top {
   padding: 0 16px;
-  position: relative;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
   height: 33px;
   color: #fff;
-}
-
-.btn-top:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50px;
-  display: block;
-  background-color: #fff;
-  content: "";
-  opacity: .2;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-top span {
-  display: flex;
-  margin-top:3px;
-  float: left;
-  margin-left:7px;
 }
 
 .btn-top:hover {
@@ -228,49 +220,47 @@ a {
   color: #000;
 }
 
-.btn-top:hover .search-icon {
+.btn-top:hover .icon-search {
   background-image: url(../img/search2.png);
 }
 
-.btn-top:hover .basket-icon {
+.btn-top:hover .icon-basket {
   background-image: url(../img/bask2.png);
 }
 
-.btn-top:hover .login-icon {
+.btn-top:hover .icon-login {
   background-image: url(../img/name2.png);
 }
 
-.search-icon {
-  background-image: url(../img/search222.png);
-  display: inline-block;
-  width: 17px;
-  height: 17px;
+.btn-search {
+  font-size: 0;
+  padding: 0 8px;
 }
 
-.basket-icon {
+.icon {
+  display: inline-block;  
+  margin-bottom: -5px;
+  margin-top: -4px;
+  margin-right: 7px;
+}
+
+.icon-basket {
   background-image: url(../img/bask1.png);
-  display: block;
-  float: left;
   width: 21px;
   height: 20px;
 }
 
-.login-icon {
-  background-image: url(../img/name1.png);
-  display: block;
-  float: left;
+.icon-login {
+  background-image: url(../img/name1.png);  
   width: 21px;
   height: 19px;
 }
 
-.input-button {
-  position: relative;
-  float: left;
-}
-
-.basket-button {
-  position: relative;
-  display: inline-block;
+.icon-search {
+  background-image: url(../img/search222.png);
+  width: 17px;
+  height: 17px;
+  margin: 0;
 }
 
 .active-page { /*состояние, когда мы находимся в каталоге*/
@@ -455,61 +445,75 @@ border-radius: 50%;
 cursor: pointer;
 }
 
-.col {
-  float: left;
+*, :after, :before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0 18px;
 }
 
-.additional-banner {
-  margin: 0;
-}
-
-.left-banner {/*левый баннер под слайдом*/
-  float: left;
-  background-color: #73172b;
-  background-image: url("../img/banner11.png");
-  border-radius: 15px;
-  width: 560px;
-  height: 229px;
+.row {
+  margin-left: 14px;
+  margin-right: 14px;
   margin-bottom: 40px;
 }
 
-.left-banner h2,
-.right-banner h2 {
-  font-size: 35px;
-  font-weight: bold;
-  color: #fff;
-  margin-left: 20px;
+.row:after {
+  clear: both;
 }
 
-.left-banner p,
-.right-banner p {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  margin-left: 20px;
+.row:after, .row:before {
+  content:" ";
+  display: table;
 }
 
-.right-banner {/*правый баннер под слайдом*/
-  float: right;
-  width: 560px;
-  height: 229px;
+.col {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-left: 13px;
+  padding-right: 13px
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.banner {
   border-radius: 15px;
+  height: 229px;
+  padding: 23px 21px 23px 20px;
+}
+
+.banner-left {/*левый баннер под слайдом*/
+  background-color: #73172b;
+  background-image: url("../img/banner11.png");  
+}
+
+.banner-right {/*правый баннер под слайдом*/
   background-color: #3a2217;
   background-image: url("../img/banner2.jpg");
 }
 
-.additional-banner a { /*ссылки в баннерах*/
-  width: 165px;
-  height: 46px;
-  opacity: 0.99;
-  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
-  background-image: linear-gradient(to top, #e74a35, #f26843);
-  padding: 10px 25px 11px 21px;
-  border: 0;
-  border-radius: 50px;
-  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+.banner-left h2,
+.banner-right h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 0;
+}
+
+.banner-left p,
+.banner-right p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .main-products img {/*радиус картинок на гл стр*/
@@ -556,8 +560,8 @@ cursor: pointer;
 
 
 .item-price { /*цена рядом с карточками*/
-  position: relative;
-  top: -94px;
+  position: absolute;
+  bottom: 44px;
   font-weight: 700;
   line-height: 45px;
   text-align: left;
@@ -582,23 +586,16 @@ cursor: pointer;
 /*текст под карточками на фоне из вафли*/
 
 .section-content {
-  display: inline-block;
-  width: 1146px;
-  height: 306px;
   background-image: url("../img/banner3.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-color: #eadcbe;
   border-radius: 15px;
-  margin-bottom: 40px;
-  margin-left: 27px;
-  margin-right: 27px;
-  padding: 15px 0;
+  padding: 25px 20px 15px;
 }
 
 .section-content p {
-  margin-top: 8px;
+  margin-top: 0;
   margin-bottom: 9px;
-  padding-left: 20px;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
@@ -618,7 +615,7 @@ cursor: pointer;
   box-sizing: border-box;
   width: 48.9%;
   margin-right: 2px;
-  padding: 12px 8px 10px 76px;
+  padding: 12px 8px 10px 60px;
   font-size: 16px;
   line-height: 22px;
   vertical-align: top;
@@ -629,7 +626,7 @@ cursor: pointer;
 content: "";
 position: absolute;
 top: 0;
-left: 20px;
+left: 0;
 width: 49px;
 height: 49px;
 background-image: url(../img/blan1.svg);
@@ -639,7 +636,7 @@ background-image: url(../img/blan1.svg);
 content: "";
 position: absolute;
 top: 0;
-left: 20px;
+left: 0;
 width: 49px;
 height: 49px;
 background-image: url(../img/blan2.svg);
@@ -649,7 +646,7 @@ background-image: url(../img/blan2.svg);
 content: "";
 position: absolute;
 top: 0;
-left: 20px;
+left: 0;
 width: 49px;
 height: 49px;
 background-image: url(../img/blan4.svg);
@@ -659,7 +656,7 @@ background-image: url(../img/blan4.svg);
 content: "";
 position: absolute;
 top: 0;
-left: 20px;
+left: 0;
 width: 49px;
 height: 49px;
 background-image: url(../img/blan4.svg);
