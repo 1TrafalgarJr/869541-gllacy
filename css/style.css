@@ -20,6 +20,7 @@ a {
 
 h3 {
   margin: 0;
+  text-align: center;
 }
 
 .none {
@@ -208,11 +209,23 @@ h3 {
   text-decoration: none;
 }
 
+.bottom-right {
+  position: absolute;
+  bottom: 36px;
+  right: 21px;
+}
+
 .btn-top {
   padding: 0 16px;
   background-color: rgba(255, 255, 255, 0.2);
   height: 33px;
   color: #fff;
+}
+
+.btn-right{
+  position: absolute;
+  bottom: 24px;
+  right: 21px;
 }
 
 .btn-top:hover {
@@ -246,6 +259,12 @@ h3 {
 
 .icon-basket {
   background-image: url(../img/bask1.png);
+  width: 21px;
+  height: 20px;
+}
+
+.icon-bask {
+  background-image: url(../img/bask2.png);
   width: 21px;
   height: 20px;
 }
@@ -392,11 +411,21 @@ h3 {
   font-weight: bold;
 }
 
-.breadcrumbs {
+.breadcrumbs li{
   display: inline-block;
   list-style: none;
-
 }
+
+.page-title {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 41px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+
+
 
 .slide-title {
   width: 700px;
@@ -450,6 +479,15 @@ cursor: pointer;
   box-sizing: border-box;
 }
 
+.main-products {
+  margin-bottom: 80px;
+}
+
+.row-2 {
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 0;
+}
 .row {
   margin-left: 14px;
   margin-right: 14px;
@@ -475,6 +513,7 @@ cursor: pointer;
 
 .col-3 {
   width: 25%;
+  margin-bottom: 41px;
 }
 
 .col-6 {
@@ -486,6 +525,7 @@ cursor: pointer;
 }
 
 .banner {
+  position: relative;
   border-radius: 15px;
   height: 229px;
   padding: 23px 21px 23px 20px;
@@ -530,9 +570,9 @@ cursor: pointer;
 
 }
 
-.pagination-list {/*нумерация в каталоге, после карточек*/
+.pagination {/*нумерация в каталоге, после карточек*/
   float: right;
-  margin: 35px 0 30px;
+  margin-bottom: 30px;
   padding: 0;
   list-style: none;
   font-size: 0;
@@ -547,18 +587,16 @@ cursor: pointer;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  color: black;
-
 }
+
 .pagination-item-current {
   border-radius: 50%;
   background-color: #fff;
-  color: black;
 }
 
-
-
-
+.pagination-list span {
+  color: black;
+}
 .item-price { /*цена рядом с карточками*/
   position: absolute;
   bottom: 44px;
@@ -663,8 +701,7 @@ background-image: url(../img/blan4.svg);
 }
 /*Новое в нашем блоге*/
 .blog {
-  float: left;
-  width: 560px;
+
   height: 220px;
   border-radius: 15px;
   background-color: white;
@@ -675,11 +712,13 @@ background-image: url(../img/blan4.svg);
   color: #323232;
 }
 .blog p {
-  margin-top: 26px;
-  margin-left: 20px;
+  margin-top: 0;
   margin-bottom: 13px;
   font-weight: 500;
   font-size: 16px;
+  padding-top: 26px;
+  padding-left: 20px;
+  line-height: 22px;
 }
 
 .blog a {
@@ -697,43 +736,46 @@ background-image: url(../img/blan4.svg);
 
 /*форма справа над картой*/
 
-
 .form-section input {
   width: 368px;
   height: 44px;
   background-color: #ffffff;
   border-radius: 5px;
   font-size: 16px;
-  margin-right: 11px;
 }
 
 .main-background {
-  float: right;
-  width: 560px;
-  height: 220px;
-  padding: 1px 0;
   color: #5a5a5a;
   background-image: url("../img/banner5.png");
   background-repeat: no-repeat;
+  padding: 5px;
+  min-height: 220px;
+
 }
 
 .additional-background {
-  position: relative;
-  box-sizing: border-box;
-  margin: 4px 5px;
   background-color: #f8f7f4;
   border-radius: 10px;
-  padding: 15px 17px 57px;
+  min-height: 210px;
 }
 
 .additional-background p {
   font-size: 16px;
+  line-height: 22px;
   color: #5a5a5a;
+  margin: 0;
+  padding-top: 33px;
+  padding-left: 21px;
+  padding-right: 22px;
+  padding-bottom: 38px;
 }
 
 .main-bottom {
   min-height: 220px;
-  margin-bottom: 39px;
+}
+
+.form-section {
+  padding-left: 20px;
 }
 
 /*карта, мороженка и форма на ней*/
@@ -820,19 +862,46 @@ background-image: url(../img/blan4.svg);
 
 .footer {/*линия в каталоге*/
   border-top: 1px solid #a9bbb1;
+  display: flex;
+  padding-top: 18px;
 }
 
 .main-footer {
-  padding-top: 19px;
-  padding-bottom: 12px;
+  margin-top: 36px;
+  display: flex;
 }
 
-.footer-social {
-  margin-top: 20px;
-}
 .ul-social li{/*иконки социалок в ряд*/
   display: inline-block;
 }
+/*
+.footer-social {
+  float: left;
+  display: inline-block;
+  margin-left: 28px;
+}
+*/
+
+
+.footer-social {
+  width: 210px;
+  margin: 0;
+  margin-right: 236px;
+}
+.logo-documents {
+  width: 305px;
+}
+
+.logo-footer {
+  width: 210px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.logo-footer p {
+  margin: 0;
+}
+
 
 .ul-social a {
   font-size: 0;
@@ -854,10 +923,36 @@ background-image: url(../img/blan4.svg);
   width: 15px;
   height: 13px;
 }
-
+/*
+.additional-information {
+  float: left;
+}
+*/
 .additional-information li {
   list-style: none;
+}
+/*
+.logo-footer {
+  float: left;
 
+}
+*/
+.filters {
+  width: 860px;
+  display: flex;
+}
+.filters-sorting {
+  width: 194px;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  border: 0;
+}
+.select-sorting {
+      padding: 0 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 33px;
+    color: #fff;
 }
 .filter {
   list-style: none;

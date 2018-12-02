@@ -8,72 +8,73 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="main-header container">
-      <nav class="main-navigation">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="img/logo1.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop">
-          </a>
-        </div>
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="img/logo1.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop">
+            </a>
+          </div>
       
-        <ul class="site-navigation">
-          <li class="navigation-li">
-            <a href="#">Каталог</a><!--всплывающее окно-->
-            <ul class="main-navigation-ul hiden">
-              <li><span class="main-navigation-span">Новинки</span></li>
-              <li><a class="none" href="catalog.html">Сливочное</a></li>
-              <li><a class="none active">Щербеты</a></li>
-              <li><a class="none" href="#">Фруктовый лёд</a></li>
-              <li><a class="none" href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li class="navigation-li">
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li class="navigation-li">
-            <a href="#">О Компании</a>
-         </li>
-        </ul>
-      </nav>
+          <ul class="site-navigation">
+            <li class="navigation-li">
+              <a href="#">Каталог</a><!--всплывающее окно-->
+              <ul class="main-navigation-ul hiden">
+                <li><span class="main-navigation-span">Новинки</span></li>
+                <li><a class="none" href="catalog.html">Сливочное</a></li>
+                <li><a class="none active">Щербеты</a></li>
+                <li><a class="none" href="#">Фруктовый лёд</a></li>
+                <li><a class="none" href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="navigation-li">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="navigation-li">
+              <a href="#">О Компании</a>
+           </li>
+          </ul>
+        </nav>
 
-      <div class="oll-buttons">
-        <div class="search-button">
-          <button type="button" class="btn btn-top search-btn">
-            <i class="search-icon"></i>Поиск
-          </button>
-          <form class="search hiden" method="post" action="https://echo.htmlacademy.ru">
-            <input id="search" type="text" name="search" placeholder="Что ищем?">
-            <label class="hiden" for="search">Что ищем?</label>
-          </form>
-        </div>
+        <div class="header-buttons">
+          <div class="header-button">
+            <button type="button" class="btn btn-top btn-search">
+              <i class="icon icon-search"></i>Поиск
+            </button>
+            <form class="search" method="post" action="https://echo.htmlacademy.ru">
+              <input id="search" type="text" name="search" placeholder="Что ищем?">
+              <label class="hiden" for="search">Что ищем?</label>
+            </form>
+          </div>
 
-        <div class="input-button">
-          <button type="button" class="btn btn-top">
-            <i class="login-icon"></i><span>Вход</span>
-          </button>
-          <form class="hiden user" method="post" action="https://echo.htmlacademy.ru">
-            <div>
-              <input id="user-email" type="text" name="email" placeholder="Электронная почта" required>
-              <label  class="hiden" for="user-email">Электронная почта</label>
-            </div>
-            <div>
-              <input id="user-password" type="password" name="password" placeholder="Пароль" required>
-              <label  class="hiden" for="user-password">Пароль</label>
-            </div>
-            <div>
-              <a href="#" class="restore">Забыли пароль?</a>
-              <a href="#" class="new-registration">Новая регистрация</a>
-            </div>
-            <button class="button" type="submit">Войти</button>
-          </form>
-        </div>
+          <div class="header-button">
+            <button type="button" class="btn btn-top">
+              <i class="icon icon-login"></i>Вход
+            </button>
+            <form class="user" method="post" action="https://echo.htmlacademy.ru">
+              <div>
+                <input id="user-email" type="text" name="email" placeholder="Электронная почта" required>
+                <label  class="hiden" for="user-email">Электронная почта</label>
+              </div>
+              <div>
+                <input id="user-password" type="password" name="password" placeholder="Пароль" required>
+                <label  class="hiden" for="user-password">Пароль</label>
+              </div>
+              <div>
+                <a href="#" class="restore">Забыли пароль?</a>
+                <a href="#" class="new-registration">Новая регистрация</a>
+              </div>
+              <button class="button" type="submit">Войти</button>
+            </form>
+          </div>
 
-        <div class="basket-button">
+        <div class="header-button">
           <button type="button" class="btn btn-top btn-bask">
-            <i class="basket-icon"></i><span>2 товара</span>
-          </button><!--кнопка или ссылка?-->
-          <div class="basket-hidden hiden"><!--скрытая корзина-->
-            <div class="basket-name-merchandise"><!--класс-имя товара-->
+            <i class="icon icon-bask"></i>2 товара
+          </button>
+          <div class="basket-hidden hiden">
+            <div class="basket-name-merchandise">
               <img src="img/1-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
               Пломбир с апельсиновым джемом
             </div>
@@ -113,86 +114,88 @@
 
     <main class="main-content">
       <div class="container">
-        <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a></li>
-          »
-          <li><a href="#">Каталог</a></li>
-          »
-          <li><a>Сливочное</a></li>
-        </ul>
-
-      <h1 class="page-title">Сливочное мороженое</h1>
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-
-      <form class="filters" method="post" action="https://echo.htmlacademy.ru"><!--наброски формы-->
-        <fieldset class="filters-sorting">
-          <legend>Сортировка:</legend>
-          <select class="select-sorting" name="sorting">
-            <option value="popularity">по полулярности</option>
-            <option value="first-cheap">сначала недорогие</option>
-            <option value="first-dear">сначала дорогие</option>
-            <option value="fat-content">по жирности</option>
-          </select>
-        </fieldset>
-
-        <fieldset class="filters-price-range">
-          <legend>Цена: 100руб. - 500руб.</legend>
-        </fieldset><!--двойной ползунок-->
-
-        <fieldset class="filters-fatness">
-          <legend>Жирность:</legend>
-          <ul class="filter"><!--как вариант ul-li убрать и div сделать-->
-            <li>
-              <input id="filters-first" type="radio" name="filter-selection" value="0%">
-              <label for="filters-first">0%</label>
-            </li>
-            <li>
-              <input id="filters-second" type="radio" name="filter-selection" value="до 10%">
-              <label for="filters-second">до 10%</label>
-            </li>
-            <li>
-              <input id="filters-third" type="radio" name="filter-selection" value="до 30%">
-              <label for="filters-third">до 30%</label>
-            </li>
-            <li>
-              <input id="filters-fourth" type="radio" name="filter-selection" value="выше 30%">
-              <label for="filters-fourth">выше 30%</label>
-            </li>
+        <div class="row">
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            »
+            <li><a href="#">Каталог</a></li>
+            »
+            <li><a>Сливочное</a></li>
           </ul>
-        </fieldset>
 
-        <fieldset class="filters-fillers">
-          <legend>Наполнители:</legend>
-          <ul class="filter">
-            <li>
-              <input id="chocolate" type="checkbox" name="chocolate" value="шоколадные">
-              <label for="chocolate">шоколадные</label>
-            </li>
-            <li>
-              <input id="sugar-powders" type="checkbox" name="sugar-powders" value="сахарные присыпки">
-              <label for="sugar-powders">сахарные присыпки</label>
-            </li>
-            <li>
-              <input id="fruits" type="checkbox" name="fruits" value="фрукты">
-              <label for="fruits">фрукты</label>
-            </li>
-            <li>
-              <input id="syrups" type="checkbox" name="syrups" value="сиропы">
-              <label for="syrups">сиропы</label>
-            </li>
-            <li>
-              <input id="jams" type="checkbox" name="jams" value="джемы">
-              <label for="jams">джемы</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="button-filters">Применить</button>
-      </form>
+          <h1 class="page-title">Сливочное мороженое</h1>
+          <h2 class="visually-hidden hiden">Фильтр товаров</h2>
+
+          <form class="filters" method="post" action="https://echo.htmlacademy.ru"><!--наброски формы-->
+            <fieldset class="filters-sorting">
+              <legend>Сортировка:</legend>
+              <select class="select-sorting" name="sorting">
+                <option value="popularity">по полулярности</option>
+                <option value="first-cheap">сначала недорогие</option>
+                <option value="first-dear">сначала дорогие</option>
+                <option value="fat-content">по жирности</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="filters-price-range">
+              <legend>Цена: 100руб. - 500руб.</legend>
+            </fieldset><!--двойной ползунок-->
+
+            <fieldset class="filters-fatness">
+              <legend>Жирность:</legend>
+              <ul class="filter"><!--как вариант ul-li убрать и div сделать-->
+                <li>
+                  <input id="filters-first" type="radio" name="filter-selection" value="0%">
+                  <label for="filters-first">0%</label>
+                </li>
+                <li>
+                  <input id="filters-second" type="radio" name="filter-selection" value="до 10%">
+                  <label for="filters-second">до 10%</label>
+                </li>
+                <li>
+                  <input id="filters-third" type="radio" name="filter-selection" value="до 30%">
+                  <label for="filters-third">до 30%</label>
+                </li>
+                <li>
+                  <input id="filters-fourth" type="radio" name="filter-selection" value="выше 30%">
+                  <label for="filters-fourth">выше 30%</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filters-fillers">
+              <legend>Наполнители:</legend>
+              <ul class="filter">
+                <li>
+                  <input id="chocolate" type="checkbox" name="chocolate" value="шоколадные">
+                  <label for="chocolate">шоколадные</label>
+                </li>
+                <li>
+                  <input id="sugar-powders" type="checkbox" name="sugar-powders" value="сахарные присыпки">
+                  <label for="sugar-powders">сахарные присыпки</label>
+                </li>
+                <li>
+                  <input id="fruits" type="checkbox" name="fruits" value="фрукты">
+                  <label for="fruits">фрукты</label>
+                </li>
+                <li>
+                  <input id="syrups" type="checkbox" name="syrups" value="сиропы">
+                  <label for="syrups">сиропы</label>
+                </li>
+                <li>
+                  <input id="jams" type="checkbox" name="jams" value="джемы">
+                  <label for="jams">джемы</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button-filters">Применить</button>
+          </form>
+        </div>
 
       <div class="main-products">
-        <h2 class="visually-hidden">Список сливочного мороженого</h2>
-        <ul class="products">
-          <li class="catalog-item col">
+        <h2 class="visually-hidden hiden">Список сливочного мороженого</h2>
+        <div class="row">
+          <div class="col col-3">
             <a href="#">
               <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </a>
@@ -206,9 +209,9 @@
             <h3>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a> 
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             </a>
@@ -222,25 +225,25 @@
             <h3>
               <a href="#">Сливочно-кофейное с кусочками шоколада</a> 
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </a>
             <p class="item-price">
               <span>
-                355
+                355 
                 <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
               </span>
               <span class="kilo">/кг</span>
             </p>
             <h3>
-              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a> 
+              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </a>
@@ -254,9 +257,9 @@
             <h3>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a> 
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
             </a>
@@ -270,9 +273,9 @@
             <h3>
               <a href="#">Сливочное с брусничным джемом</a> 
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
             </a>
@@ -286,9 +289,9 @@
             <h3>
               <a href="#">Сливочно-черничное с цельными ягодами черники</a> 
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
             </a>
@@ -302,9 +305,9 @@
             <h3>
               <a href="#">Сливочно-лимонное с карамельной присыпкой</a> 
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
             </a>
@@ -318,9 +321,9 @@
             <h3>
               <a href="#">Сливочное с шоколадной стружкой</a> 
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             </a>
@@ -334,9 +337,9 @@
             <h3>
               <a href="#">Сливочно-ванильное с кусочками шоколада</a> 
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
             </a>
@@ -350,9 +353,9 @@
             <h3>
               <a href="#">Сливочное с ментоловым сиропом</a> 
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
             </a>
@@ -366,9 +369,9 @@
             <h3>
               <a href="#">Сливочное с кусочками черного шоколада</a> 
             </h3>
-          </li>
+          </div>
 
-          <li class="catalog-item col">
+          <div class="col col-3">
             <a href="#">
               <img src="img/12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
             </a>
@@ -382,25 +385,26 @@
             <h3>
               <a href="#">Сливочное с мятным сиропом</a> 
             </h3>
-          </li>
-        </ul>
-
-        <div class="clearfix"></div>
-        <nav class="pagination"><!--навигация-нумерация страниц-->
-          <ul class="pagination-list">
-            <li class="pagination-item"><a href="#">&lt</a></li>
-            <li class="pagination-item pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">4</a></li>
-            <li class="pagination-item"><a href="#">5</a></li>
-            <li class="pagination-item"><a href="#">&gt</a></li>
-          </ul>
-        </nav>
+          </div>
+        </div>
       </div>
-    </main>
 
-    <footer class="footer container">
+      <div class="clearfix"></div>
+      <nav class="pagination"><!--навигация-нумерация страниц-->
+        <ul class="pagination-list">
+          <li class="pagination-item"><a href="#">&lt</a></li>
+          <li class="pagination-item pagination-item-current"><a><span>1</span></a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#">5</a></li>
+          <li class="pagination-item"><a href="#">&gt</a></li>
+        </ul>
+      </nav>
+    </div>
+    </main>
+    <div class="clearfix"></div>
+   <footer class="footer container">
       <div class="footer-social">
         <ul class="ul-social">
           <li><a href="#" class="social-button" aria-label="Ссылка на Твиттер"><img src="img/twitter.svg">Twitter</a></li>
@@ -412,16 +416,16 @@
 
       <div class="logo-documents">
         <ul class="additional-information">
-          <li><a href="#" class="iconed">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
+          <li><a href="#" class="iconed info-left">Для поставщиков</a></li>
+          <li><a href="#" class="info-left">О производстве</a></li>
+          <li><a href="#"class="info-right">Наши документы</a></li>
+          <li><a href="#"class="info-right">Экологические стандарты</a></li>
         </ul>
       </div>
 
       <div class="logo-footer">
         <a href="#" class="logo">
-        <img src="img/logo-htmlacademy.svg" width="200" height="100" alt="Логотип HTML Academy">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
         <p>Сделано в <a href="#">HTML Academy</a> 2018</p>
       </div>
