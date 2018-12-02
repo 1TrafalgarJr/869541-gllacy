@@ -411,6 +411,10 @@ h3 {
   font-weight: bold;
 }
 
+.breadcrumbs {
+  margin-top: -67px;
+}
+
 .breadcrumbs li{
   display: inline-block;
   list-style: none;
@@ -484,13 +488,13 @@ cursor: pointer;
 }
 
 .row-2 {
-  margin-left: 14px;
-  margin-right: 14px;
+  margin-left: 27px;
+  margin-right: 27px;
   margin-bottom: 0;
 }
 .row {
-  margin-left: 14px;
-  margin-right: 14px;
+  margin-left: 27px;
+  margin-right: 27px;
   margin-bottom: 40px;
 }
 
@@ -508,12 +512,24 @@ cursor: pointer;
   float: left;
   min-height: 1px;
   padding-left: 13px;
-  padding-right: 13px
 }
 
+.col-right {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-right: 13px;
+}
+
+.col-center {
+  position: relative;
+  float: left;
+  min-height: 1px;
+
+}
 .col-3 {
   width: 25%;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .col-6 {
@@ -559,7 +575,9 @@ cursor: pointer;
 .main-products img {/*радиус картинок на гл стр*/
   border-radius: 150px;
 }
-
+.main-products-1 img {
+  border-radius: 150px;
+}
 .catalog-item { /*название каждой ЛИ в main-products*/
   display: inline-block;
   width: 22%;
@@ -742,6 +760,7 @@ background-image: url(../img/blan4.svg);
   background-color: #ffffff;
   border-radius: 5px;
   font-size: 16px;
+  padding-left: 15px;
 }
 
 .main-background {
@@ -868,6 +887,7 @@ background-image: url(../img/blan4.svg);
 
 .main-footer {
   margin-top: 36px;
+  margin-bottom: 25px;
   display: flex;
 }
 
@@ -887,15 +907,43 @@ background-image: url(../img/blan4.svg);
   width: 210px;
   margin: 0;
   margin-right: 236px;
-}
-.logo-documents {
-  width: 305px;
+  margin-left: 27px;
 }
 
+
+.additional-information li:nth-child(1),
+.additional-information li:nth-child(2),
+.additional-information li:nth-child(3),
+.additional-information li:nth-child(4) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 48.9%;
+    font-size: 13px;
+    line-height: 18px;
+    color: #323232;
+}
+.additional-information li:nth-child(1):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 13px;
+    background-image: url(../img/love.svg);
+  }
+/*
+.additional-information {
+  float: left;
+}
+*/
+.additional-information li {
+  list-style: none;
+}
 .logo-footer {
-  width: 210px;
   margin: 0;
   margin-left: auto;
+  margin-right: 27px;
 }
 
 .logo-footer p {
@@ -917,20 +965,8 @@ background-image: url(../img/blan4.svg);
   margin-left: 3px;
   vertical-align: top;
 }
-.iconed {/*сердце рядом с поставщиком*/
-  background-image: url("../img/love.svg");
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 13px;
-}
-/*
-.additional-information {
-  float: left;
-}
-*/
-.additional-information li {
-  list-style: none;
-}
+
+
 /*
 .logo-footer {
   float: left;
