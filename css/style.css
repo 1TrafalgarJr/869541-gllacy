@@ -428,9 +428,6 @@ h3 {
   margin-bottom: 30px;
 }
 
-
-
-
 .slide-title {
   width: 700px;
   margin: 0 auto 30px;
@@ -882,7 +879,8 @@ background-image: url(../img/blan4.svg);
 .footer {/*линия в каталоге*/
   border-top: 1px solid #a9bbb1;
   display: flex;
-  padding-top: 18px;
+  padding-top: 49px;
+  margin-bottom: 29px;
 }
 
 .main-footer {
@@ -909,28 +907,32 @@ background-image: url(../img/blan4.svg);
   margin-right: 236px;
   margin-left: 27px;
 }
-
-
-.additional-information li:nth-child(1),
-.additional-information li:nth-child(2),
-.additional-information li:nth-child(3),
-.additional-information li:nth-child(4) {
-    position: relative;
-    display: inline-block;
-    box-sizing: border-box;
-    width: 48.9%;
-    font-size: 13px;
-    line-height: 18px;
-    color: #323232;
+.add-info-1 {
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  color: #323232;
 }
-.additional-information li:nth-child(1):before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15px;
-    height: 13px;
-    background-image: url(../img/love.svg);
+
+.add-info-2 {
+  float: left;
+  margin-right: 30px;
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  color: #323232;
+}
+.add-info-1 li:nth-child(1):before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -17px;
+  width: 15px;
+  height: 13px;
+  background-image: url(../img/love.svg);
   }
 /*
 .additional-information {
@@ -943,6 +945,7 @@ background-image: url(../img/blan4.svg);
 .logo-footer {
   margin: 0;
   margin-left: auto;
+  margin-top: -24px;
   margin-right: 27px;
 }
 
