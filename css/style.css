@@ -1392,6 +1392,8 @@ font-size: 35px;
   position: absolute;
   top: 37px;
   width: 143px;
+  margin-top: 7px;
+  z-index: 100;
 }
 
 .main-navigation-ul a {
