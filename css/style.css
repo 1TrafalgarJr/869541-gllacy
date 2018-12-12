@@ -1292,7 +1292,7 @@ height: 36px;
 .main-bottom {
   min-height: 220px;
 }
-/*
+
 .map {
   background-image: url("../img/map.png");
   background-position: -48px 0;
@@ -1301,10 +1301,7 @@ height: 36px;
   width: 1200px;
   margin-top: -52px;
 }
-*/
-.map {
-  position: relative;
-}
+
 
 .map .ballon{/*метка-морож на карте*/
   background-image: url("../img/ice111.svg");
