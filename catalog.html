@@ -153,70 +153,80 @@
               </fieldset>
               <fieldset class="filters-price-range">
                 <legend>Цена: 100руб. - 500руб.</legend>
+                <div class="filter-slider">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="filters-fatness">
                 <legend>Жирность:</legend>
-                <ul class="filter">
-                  <li>
-                    <input id="filters-first" type="radio" name="filter-selection" value="0%">
-                    <label for="filters-first">0%</label>
-                  </li>
-                  <li>
-                    <input id="filters-second" type="radio" name="filter-selection" value="до 10%">
-                    <label for="filters-second">до 10%</label>
-                  </li>
-                  <li>
-                    <input id="filters-third" type="radio" name="filter-selection" value="до 30%">
-                    <label for="filters-third">до 30%</label>
-                  </li>
-                  <li>
-                    <input id="filters-fourth" type="radio" name="filter-selection" value="выше 30%">
-                    <label for="filters-fourth">выше 30%</label>
-                  </li>
-                </ul>
+                <div class="filters-background">
+                  <ul>
+                    <li class="filter">
+                      <input class="radio-filter" id="filters-first" type="radio" name="filter-selection" value="0%">
+                      <label for="filters-first">0%</label>
+                    </li>
+                    <li class="filter">
+                      <input class="radio-filter" id="filters-second" type="radio" name="filter-selection" value="до 10%" checked>
+                      <label for="filters-second">до 10%</label>
+                    </li>
+                    <li class="filter">
+                      <input class="radio-filter" id="filters-third" type="radio" name="filter-selection" value="до 30%">
+                      <label for="filters-third">до 30%</label>
+                    </li>
+                    <li class="filter">
+                      <input class="radio-filter" id="filters-fourth" type="radio" name="filter-selection" value="выше 30%">
+                      <label for="filters-fourth">выше 30%</label>
+                    </li>
+                  </ul>
+                </div>
               </fieldset>
               <fieldset class="filters-fillers">
                 <legend class="filters-legend">Наполнители:</legend>
-                <ul class="filter filter-width">
-                  <li>
-                    <input id="chocolate" type="checkbox" name="chocolate" value="шоколадные">
-                    <label for="chocolate">шоколадные</label>
-                  </li>
-                  <li>
-                    <input id="sugar-powders" type="checkbox" name="sugar-powders" value="сахарные присыпки">
-                    <label for="sugar-powders">сахарные присыпки</label>
-                  </li>
-                  <li>
-                    <input id="fruits" type="checkbox" name="fruits" value="фрукты">
-                    <label for="fruits">фрукты</label>
-                  </li>
-                  <li>
-                    <input id="syrups" type="checkbox" name="syrups" value="сиропы">
-                    <label for="syrups">сиропы</label>
-                  </li>
-                  <li>
-                    <input id="jams" type="checkbox" name="jams" value="джемы">
-                    <label for="jams">джемы</label>
-                  </li>
-                </ul>
+                <div class="filters-background filters-height">
+                  <ul>
+                    <li class="filter filter-width">
+                      <input class="checkbox-filter" id="chocolate" type="checkbox" name="chocolate" value="шоколадные" checked>
+                      <label for="chocolate">шоколадные</label>
+                    </li>
+                    <li class="filter filter-width">
+                      <input class="checkbox-filter" id="sugar-powders" type="checkbox" name="sugar-powders" value="сахарные присыпки" checked>
+                      <label for="sugar-powders">сахарные присыпки</label>
+                    </li>
+                    <li class="filter filter-width">
+                      <input class="checkbox-filter" id="fruits" type="checkbox" name="fruits" value="фрукты">
+                      <label for="fruits">фрукты</label>
+                    </li>
+                    <li class="filter filter-width">
+                      <input class="checkbox-filter" id="syrups" type="checkbox" name="syrups" value="сиропы">
+                      <label for="syrups">сиропы</label>
+                    </li>
+                    <li class="filter filter-width">
+                      <input class="checkbox-filter" id="jams" type="checkbox" name="jams" value="джемы">
+                      <label for="jams">джемы</label>
+                    </li>
+                  </ul>
+                </div>
               </fieldset>
               <button class="btn-filters">Применить</button>
             </form>
           </div>
-          <div class="row">
+          <div class="row-2">
             <div class="main-products">
               <h2 class="visually-hidden hiden">Список сливочного мороженого</h2>
-              <div class="coll">
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3">                 
                     <a href="#">
                       <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                     </a>
                     <p class="item-price">
-                      <span>
-                        310 
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>310</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -225,16 +235,14 @@
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                     </a>
                     <p class="item-price">
-                      <span>
-                        380
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>380</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -243,16 +251,14 @@
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                     </a>
                     <p class="item-price">
-                      <span>
-                        355 
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>355</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -261,16 +267,14 @@
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                     </a>
                     <p class="item-price">
-                      <span>
-                        415
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>415</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -279,16 +283,14 @@
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
                     </a>
                     <p class="item-price">
-                      <span>
-                        325
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>325</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -297,16 +299,14 @@
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
                     </a>
                     <p class="item-price">
-                      <span>
-                        410
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>410</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -315,16 +315,14 @@
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
                     </a>
                     <p class="item-price">
-                      <span>
-                        375
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>375</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -333,34 +331,30 @@
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
                     </a>
                     <p class="item-price">
-                      <span>
-                        320
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>320</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
-                      <a href="#">Сливочное с шоколадной стружкой</a> 
+                      <a href="#">Сливочное с шоколадной стружкой</a>
                     </h3>
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
                     </a>
                     <p class="item-price">
-                      <span>
-                        440
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>440</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -369,16 +363,14 @@
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
                     </a>
                     <p class="item-price">
-                      <span>
-                        435
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>435</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -387,16 +379,14 @@
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
                     </a>
                     <p class="item-price">
-                      <span>
-                        355
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>355</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -405,16 +395,14 @@
                     <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                   </div>
                 </div>
-                <div class="col col-3">
-                  <div class="item-hover">
+                <div <div class="item-hover">
+                  <div class="col col-3"> 
                     <a href="#">
                       <img src="img/12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
                     </a>
                     <p class="item-price">
-                      <span>
-                        420
-                        <img src="img/ruble.svg" alt="Рубль" width="31" height="33">
-                      </span>
+                      <span>420</span>
+                      <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
                     <h3>
@@ -425,18 +413,17 @@
                 </div>
               </div>
             </div>
+            <ul class="pagination-list">
+              <li><a href="#"><img src="img/right.png" width="8" height="12" alt="Left"></a></li>
+              <li class="pagination-item pagination-item-current"><a class="link"><span>1</span></a></li>
+              <li class="pagination-item"><a href="#" class="link">2</a></li>
+              <li class="pagination-item"><a href="#" class="link">3</a></li>
+              <li class="pagination-item"><a href="#" class="link">4</a></li>
+              <li class="pagination-item"><a href="#" class="link">5</a></li>
+              <li class="pagination-item"><a href="#"><img src="img/left.png" width="8" height="12"></a></li>
+            </ul>
           </div>
         </div>
-
-        <ul class="pagination-list">
-          <li><a href="#"><img src="img/right.png" width="8" height="12" alt="Left"></a></li>
-          <li class="pagination-item pagination-item-current"><a class="link"><span>1</span></a></li>
-          <li class="pagination-item"><a href="#" class="link">2</a></li>
-          <li class="pagination-item"><a href="#" class="link">3</a></li>
-          <li class="pagination-item"><a href="#" class="link">4</a></li>
-          <li class="pagination-item"><a href="#" class="link">5</a></li>
-          <li class="pagination-item"><a href="#"><img src="img/left.png" width="8" height="12"></a></li>
-        </ul>
       </main>
     </div>
     
@@ -463,7 +450,7 @@
         <a href="#" class="logo">
         <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
-        <p>Сделано в <a href="#">HTML Academy</a> 2018</p>
+        <p>Сделано в <a href="#">HTML Academy</a>  © 2018</p>
       </div>
     </footer>
   </body>
