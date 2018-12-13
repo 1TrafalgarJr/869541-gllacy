@@ -571,7 +571,7 @@ h3 {
 
 .footer-social {
   margin-top: -10px;
-  margin-left: -2px;
+  margin-left: -3px;
 }
 
 .footer-social-index {
@@ -1139,15 +1139,15 @@ height: 36px;
 
 .logo-footer {
   margin: 0;
-  margin-top: -23px;
+  margin-top: -21px;
   margin-right: 5px;
-  margin-left: auto;
+  margin-left: -37px;
 }
 
 .logo-footer-index {
   margin-top: -20px;
   letter-spacing: 0.4px;
-  margin-right: 3px;
+  margin-right: 6px;
 }
 
 .logo-footer img {
@@ -1173,7 +1173,6 @@ height: 36px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 230px;
 }
 
 .logo-documents-index {
@@ -1315,16 +1314,16 @@ height: 36px;
 }
 
 .map {
-  background-image: url("../img/map.png");
+  /*background-image: url("../img/map.png");
   background-position: -48px 0;
   height: 430px;
-  position: relative;
   width: 1200px;
+  */
+  position: relative;
   margin-top: -52px;
 }
-
-
-.map .ballon{/*метка-морож на карте*/
+/*
+.map .ballon{
   background-image: url("../img/ice111.svg");
   height: 140px;
   left: 266px;
@@ -1334,7 +1333,7 @@ height: 36px;
   z-index: 2;
 }
 
-.map .shadow {/*тень от морож*/
+.map .shadow {
   background-image: url("../img/shadow.png");
   height: 110px;
   left: 302px;
@@ -1343,17 +1342,22 @@ height: 36px;
   width: 182px;
   z-index: 3;
 }
+*/
+.container-1 {
+  margin: 0 auto;
+  width: 1200px;
+  position: relative;
+}
 
-.map .map-information { /*форма на карте*/
+.container-1 section { /*форма на карте*/
   background-color: #ffffff;
   border-radius: 15px;
   color: #323232;
   height: 305px;
   position: absolute;
   right: 30px;
-  top: 63px;
-  width: 302px;
-  z-index: 4; 
+  top: -373px;
+  z-index: 4;
 }
 
 .map-information a {/*форма обратной связи*/
@@ -1394,7 +1398,7 @@ height: 36px;
 .main-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 36px;
+  margin-top: 29px;
   padding-bottom: 29px;
 }
 
@@ -2006,7 +2010,8 @@ input[type="email"]:focus,
 input[type="password"]:focus, 
 textarea:focus {
   border: 0;
-  box-shadow: inset 0 0 2px #f8f7f4;
-  color: rgba(46, 136, 228, 0.52);
+  box-shadow: inset 0 0 2px rgba(46, 136, 228, 0.52);
+  border-radius: 3px;
+  color: #000;
 }
 
