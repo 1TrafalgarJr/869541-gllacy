@@ -1200,7 +1200,7 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
 }
 
 .logo-documents-index {
-  margin-top: 10px;
+  padding-top: 10px;
   margin-left: 4px;
 }
 
@@ -1425,10 +1425,6 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
   justify-content: space-between;
   margin-top: 29px;
   padding-bottom: 29px;
-}
-
-.none {
-  text-decoration: none;
 }
 
 .navigation-li a:header {
