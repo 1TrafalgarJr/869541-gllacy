@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #849d8f; 
+
   color: #fff;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
@@ -9,10 +9,8 @@ body {
 
 .slider-main-phone {
   background-color: #849d8f;
-  background-image: url("../img/ice.png");
   background-position: top center;
   background-repeat: no-repeat;
-
 }
 
 .slider-main-phone::before,
@@ -27,6 +25,10 @@ body {
 
 .slider-main-phone::after {
   background-image: url("../img/ice3.png");
+}
+
+.catalog-page {
+  background-image: linear-gradient(to bottom,#9cb0a5 1%,#849d8f 40%);
 }
 
 *, :after, :before {
@@ -500,6 +502,7 @@ h3 {
 
 .item-hover h3 {
   padding-left: 9px;
+  min-height: 45px;
 }
 
 .description:hover a{
@@ -554,7 +557,7 @@ h3 {
   width: 1146px;
   margin: 0 auto;
   padding-top: 41px;
-  margin-bottom: 35px;
+  padding-bottom: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
