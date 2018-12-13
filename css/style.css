@@ -78,10 +78,11 @@ h3 {
   font-size: 16px;
   line-height: 22px;
   margin: 0;
-  padding-top: 27px;
-  padding-right: 22px;
+  padding-top: 28px;
+  padding-right: 18px;
   padding-bottom: 38px;
-  padding-left: 21px;
+  padding-left: 22px;
+
 }
 
 .add-info-1 {
@@ -89,8 +90,7 @@ h3 {
   font-size: 13px;
   line-height: 18px;
   list-style: none;
-  margin-top: -1px;
-  margin-left: 10px;
+  margin-left: 14px;
   padding: 0;
   position: relative;
 }
@@ -99,7 +99,6 @@ h3 {
   color: #323232;
   font-size: 13px;
   line-height: 18px;
-  margin-top: -1px;
   margin-right: 40px;
   margin-left: 32px;
   list-style: none;
@@ -110,7 +109,7 @@ h3 {
   content: "";
   background-image: url(../img/love.svg);
   height: 13px;
-  left: -22px;
+  left: -23px;
   position: absolute;
   top: -9px;
   width: 15px;
@@ -163,7 +162,7 @@ h3 {
   font-size: 18px;
   font-weight: bold;
   opacity: 0.99;
-  padding: 10px 23px 14px 21px;
+  padding: 9px 22px 14px 21px;
   text-decoration: none;
 
 }
@@ -197,10 +196,10 @@ h3 {
 }
 
 .btn-right{
-  bottom: 24px;
+  bottom: 23px;
   position: absolute;
   right: 21px;
-      height: 46px;
+  height: 46px;
 }
 
 .btn-top:hover .icon-basket {
@@ -236,7 +235,7 @@ h3 {
   content: "»";
   color: #fff;
   margin-right: 4px;
-  margin-left: 4px;
+  margin-left: 5px;
 }
 
 .banners {
@@ -275,7 +274,7 @@ h3 {
   color: #fff;
   font-size: 35px;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: -2px;
   margin-bottom: 0;
   line-height: 41px;
 }
@@ -305,8 +304,8 @@ h3 {
   font-size: 16px;
   line-height: 22px;
   margin-top: 0;
-  margin-bottom: 1px;
-  padding-top: 24px;
+  margin-bottom: 2px;
+  padding-top: 23px;
   padding-left: 20px;
 }
 
@@ -330,8 +329,8 @@ h3 {
   font-weight: 500;
   height: 37px;
   line-height: 18px;
-  margin-top: 26px;
-  margin-left: 13px;
+  margin-top: 28px;
+  margin-left: 11px;
   width: 144px;
   cursor: pointer;
 }
@@ -490,8 +489,8 @@ h3 {
 }
 
 .col-3 {
-  margin-right: 31px;
-  margin-bottom: 95px;
+  margin-right: 33px;
+  margin-bottom: 94px;
   width: 267px;
 }
 
@@ -502,10 +501,11 @@ h3 {
 .col-3:nth-child(1n) {
   margin-left: -4px;
   padding-left: 0;
+  margin-right: 32px;
 }
 
 .item-hover h3 {
-  padding-left: 9px;
+  padding-left: 2px;
   min-height: 45px;
 }
 
@@ -560,7 +560,7 @@ h3 {
   border-top: 1px solid #a9bbb1;
   width: 1146px;
   margin: 0 auto;
-  padding-top: 41px;
+  padding-top: 40px;
   padding-bottom: 35px;
   display: flex;
   justify-content: space-between;
@@ -570,8 +570,8 @@ h3 {
 }
 
 .footer-social {
-  margin-top: -10px;
-  margin-left: -3px;
+  margin-top: -7px;
+  margin-left: -4px;
 }
 
 .footer-social-index {
@@ -586,7 +586,7 @@ h3 {
 .filters-sorting {
   border: 0;
   width: 220px;
-  margin-top: -5px;
+  margin-top: -4px;
   margin-right: -12px;
   margin-left: -13px;
 }
@@ -598,7 +598,7 @@ h3 {
 .filters-fillers {
   border: 0;
   padding: 0;
-  margin-top: 5px;
+  margin-top: 6px;
   margin-left: -4px;
 }
 
@@ -607,8 +607,10 @@ h3 {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+  margin-left: 14px;
+  position: relative;
   padding-bottom: 2px;
-  padding-left: 14px;
+  padding-left: 0px;
 }
 
 .filters-legend {
@@ -617,15 +619,14 @@ h3 {
 
 .filters select{
   height: 36px;
-  padding: 0 35px 0 15px;
+  padding: 0 34px 0 14px;
   font-size: 16px;
   line-height: 36px;
   color: #fff;
-  background: rgba(255,255,255,.2) url(../img/11.png) no-repeat 164px 50%;
+  background: rgba(255,255,255,.2) url(../img/11.png) no-repeat 166px 50%;
   border: none;
   border-radius: 18px;
   outline: none;
-  width: 194px;
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -647,6 +648,8 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
 .filters-price-range {
   border: 0;
   margin-top: -4px;
+  margin-left: 0px;
+  letter-spacing: 0.7px;
 }
 
 .filters .filter-slider {
@@ -709,27 +712,38 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
 .filters-fatness {
   border: 0;
   margin-top: -4px;
-  margin-left: -7px;
-
+  margin-left: -5px;
 }
 
 .filters-background {
-margin-top: -2px;
-padding: 6px 12px;
-border-radius: 25px;
-background-color: rgba(255,255,255,.2);
-height: 36px;
+  margin-top: -2px;
+  padding: 6px 12px;
+  border-radius: 25px;
+  background-color: rgba(255,255,255,.2);
+  height: 36px;
 }
+
 .filters-background ul {
   margin: 0;
   padding: 0;
 }
+
+.filters-background li:last-child {
+  padding-left: 30px;
+  padding-right: 6px;
+}
+
+.filters-height li:last-child {
+  padding-left: 34px;
+  padding-right: 9px;
+}
+
 .filter {
   display: inline-block;
   vertical-align: top;
   padding-top: 2px;
-  padding-left: 34px;
-  padding-right: 17px;
+  padding-left: 32px;
+  padding-right: 16px;
 }
 
 .filter input {
@@ -740,13 +754,13 @@ height: 36px;
   position: relative;
   display: block;
   cursor: pointer;
-  letter-spacing: 0.4px;
+  letter-spacing: 1px;
 }
 
 .radio-filter+label::before {
   content: "";
   position: absolute;
-  left: -33px;
+  left: -32px;
   top: 0;
   width: 22px;
   height: 22px;
@@ -758,7 +772,7 @@ height: 36px;
   content: "";
   position: absolute;
   top: 7px;
-  left: -26px;
+  left: -24px;
   width: 8px;
   height: 8px;
   background-color: rgba(255,255,255,.7);
@@ -766,9 +780,9 @@ height: 36px;
 }
 
 .filter-width {
-  padding-top: 1px;
-  padding-left: 36px;
-  padding-right: 24px;
+  padding-top: 2px;
+  padding-left: 35px;
+  padding-right: 18px;
 }
 
 .filters-width {
@@ -878,7 +892,7 @@ height: 36px;
 .icon {
   display: inline-block; 
   margin-top: -4px;
-  margin-right: 7px; 
+  margin-right: 6px; 
   margin-bottom: -5px;
 }
 
@@ -962,6 +976,16 @@ height: 36px;
   margin-top: 1px;
 }
 
+.item-hover .padding{
+  padding-left: 5px;
+  margin-top: 5px;
+}
+.item-hover .paddings {
+  margin-left: 7px;
+  margin-right: 4px;
+  margin-top: 7px;
+}
+
 .item-hover:hover,
 .item-hover:focus {
   z-index: 2;
@@ -986,7 +1010,7 @@ height: 36px;
   position: absolute;
   top: 917px;
   z-index: 15;
-  margin-left: -4px;
+  margin-left: -3px;
   width: 61px;
   height: 61px;
   background-image: url(../img/hit.svg);
@@ -1100,7 +1124,7 @@ height: 36px;
 .list-center li:nth-child(1):before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 49px;
   height: 49px;
@@ -1110,7 +1134,7 @@ height: 36px;
 .list-center li:nth-child(3):before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 49px;
   height: 49px;
@@ -1121,7 +1145,7 @@ height: 36px;
   content: "";
   position: absolute;
   top: -1px;
-  left: 0;
+  left: 3px;
   width: 49px;
   height: 49px;
   background-image: url(../img/blan3.svg);
@@ -1131,7 +1155,7 @@ height: 36px;
   content: "";
   position: absolute;
   top: -1px;
-  left: 0;
+  left: 3px;
   width: 49px;
   height: 49px;
   background-image: url(../img/blan4.svg);
@@ -1162,7 +1186,7 @@ height: 36px;
 
 .logo-footer p {
   margin: 0;
-  margin-top: -3px;
+  margin-top: -1px;
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
@@ -1177,6 +1201,7 @@ height: 36px;
 
 .logo-documents-index {
   margin-top: 10px;
+  margin-left: 4px;
 }
 
 .login-user .user {
@@ -1320,7 +1345,7 @@ height: 36px;
   width: 1200px;
   */
   position: relative;
-  margin-top: -52px;
+  margin-top: -51px;
 }
 /*
 .map .ballon{
@@ -1373,9 +1398,9 @@ height: 36px;
 }
 
 .map-information p:nth-child(1) {/*инфо с адресом тел*/
-  margin-top: 29px;
-  margin-left: 24px;
-  margin-bottom: 18px;
+  margin-top: 28px;
+  margin-left: 25px;
+  margin-bottom: 19px;
 }
 
 .map-information p { /*текст в форме на карте*/
@@ -1440,7 +1465,7 @@ height: 36px;
 font-size: 35px;
   font-weight: bold;
   line-height: 41px;
-  margin-top: 0px;
+  margin-top: -1px;
   margin-left: -5px;
   margin-bottom: 30px;
 }
@@ -1461,7 +1486,7 @@ font-size: 35px;
   list-style: none;
   margin-top: 18px;
   margin-right: 19px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding: 0;
 }
 
@@ -1487,6 +1512,41 @@ font-size: 35px;
   margin: 0 0 0 5px;
   text-align: center;
   width: 26px;
+}
+
+.pagination-item {
+  margin-top: 3px;
+}
+
+.pagination-list li:nth-child(1) {
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
+.pagination-list li:nth-child(2) {
+  margin-right: -3px;
+  margin-top: 3px;
+}
+
+.pagination-list li:nth-child(3),
+.pagination-list li:nth-child(5) {
+  margin-right: -2px;
+  margin-top: 3px;
+}
+
+.pagination-list li:nth-child(4) {
+  margin-right: -1px;
+  margin-top: 3px;
+}
+
+.pagination-list li:nth-child(6) {
+  margin-right: 2px;
+  margin-top: 3px;
+}
+
+.pagination-list li:nth-child(7) {
+  margin-right: 4px;
+  margin-top: 3px;
 }
 
 .pagination-list span {
@@ -1528,6 +1588,7 @@ font-size: 35px;
 }
 
 .row-4 {
+  margin-top: -1px;
   margin-right: 27px;
   margin-left: 27px;
 }
@@ -1553,13 +1614,13 @@ font-size: 35px;
   margin-top: 5px;
   min-height: 18px;
   padding-top: 8px;
-  margin-right: -3px;
+  margin-right: 0px;
   position: relative;
   vertical-align: top;
 }
 
 .site-navigation li:hover .main-navigation-ul {
-  margin-top: 0;
+  margin-top: 7px;
 }
 
 .site-navigation a:hover {
@@ -1579,7 +1640,7 @@ font-size: 35px;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-  padding: 7px 15px;
+  padding: 7px 14px;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -1710,13 +1771,14 @@ font-size: 35px;
 }
 
 .slide-title {
-  width: 672px;
+  width: 671px;
   height: 116px;
   font-size: 60px;
   font-weight: bold;
   line-height: 60px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-left: 261px;
+  margin-bottom: 42px;
   text-align: center;
 }
 
@@ -1724,7 +1786,8 @@ font-size: 35px;
   bottom: 22px;
   font-size: 0;
   left: 0;
-  margin-left: 25px;
+  margin-bottom: -2px;
+  margin-left: 23px;
   position: absolute;
   z-index: 20;
 }
@@ -1754,9 +1817,9 @@ font-size: 35px;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  margin-top: -1px;
+  margin-top: 0px;
   margin-bottom: 9px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2px;
 }
 
 .social-button {
@@ -1852,14 +1915,15 @@ font-size: 35px;
   font-size: 22px;
   font-weight: 900;
   line-height: 24px;
-  margin-top: 3px;
+  margin-top: 4px;
+  margin-right: -3px;
 }
 
 .working-data p:first-child {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  margin-top: -8px;
+  margin-top: -7px;
 }
 
 body > input[type="radio"] {
