@@ -162,12 +162,46 @@ h3 {
   font-size: 18px;
   font-weight: bold;
   opacity: 0.99;
-  padding: 9px 22px 14px 21px;
+  padding: 12px 22px 14px 21px;
   text-decoration: none;
 
 }
 
 .btn-main:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.login-link {
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.99;
+  padding: 12px 22px 14px 21px;
+  text-decoration: none;
+  position: relative;
+}
+
+.login-link:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.modal-send {
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.99;
+  padding: 12px 22px 14px 21px;
+  text-decoration: none;
+  position: relative;
+}
+
+.modal-send:hover {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -772,7 +806,7 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
   content: "";
   position: absolute;
   top: 7px;
-  left: -24px;
+  left: -25px;
   width: 8px;
   height: 8px;
   background-color: rgba(255,255,255,.7);
@@ -1975,12 +2009,47 @@ body > input[type="radio"] {
   width: 18px;
 }
 
-.form-latent {
-  display: block;
-  z-index: 1000;
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.form-open {
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal {
   display: none;
   background-color: #f8f7f4;
   border-radius: 10px;
@@ -1998,7 +2067,16 @@ body > input[type="radio"] {
   z-index: 100;
 }
 
-.form-latent h3{
+.modal-show {/*ерез js класс добавляется и удаляется*/
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-login h3{
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -2006,27 +2084,27 @@ body > input[type="radio"] {
   margin-left: -84px;
 }
 
-.form-latent input:nth-child(1) {
+.modal-login input:nth-child(1) {
   margin-top: 24px;
   width: 267px;
 }
 
-.form-latent input:nth-child(3) {
+.modal-login input:nth-child(3) {
   margin-top: 20px;
   width: 267px;
 }
 
-.form-latent textarea {
+.modal-login textarea {
   height: 155px;
   margin-top: 20px;
   width: 428px;
 }
 
-.form-latent label {
+.modal-login label {
   display: none;
 }
 
-.form-latent button:last-child {
+.modal-login button:last-child {
   height: 44px;
   margin-top: 15px;
   margin-left: 290px;

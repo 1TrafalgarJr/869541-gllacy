@@ -262,26 +262,28 @@
               <b class="index-map-phone">8 812 450-25-25</b>
               (с 10 до 20 ежедневно)
             </p>
-            <a href="index.html" class="btn btn-main">Форма обротной связи</a>
+            <a href="index.html" class="btn btn-main login-link">Форма обротной связи</a>
           </section>
         </div>
       </div>
-      <div class="form-open form-latent">
+
+      <div class="modal modal-login">
         <h3>Мы обязательно вам ответим!</h3>
         <button class="popup-close" type="button" title="Закрыть"></button>
-        <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
-          <input id="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?" required>
+        <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
+          <input id="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?" >
           <label  class="hiden-top" for="feedback-name">
             <span>Как вас зовут?</span>
           </label>
-          <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
+          <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" >
           <label  class="hiden-top" for="feedback-email">
             <span>Ваша почта для ответа?</span>
           </label>
-          <textarea name="feedback-text" placeholder="Напишите что-нибудь..." required=""></textarea>
-          <button class="btn btn-main">Отправить</button>
+          <textarea name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+          <button class="btn btn-main modal-send">Отправить</button>
         </form>
       </div>
+
       <div class="container">
         <div class="row-4">
           <footer class="main-footer">
@@ -313,5 +315,6 @@
         </div>
       </div>
     </div>
+    <script src="js/javascript.js"></script>
   </body>
 </html>
