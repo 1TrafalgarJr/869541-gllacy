@@ -2021,7 +2021,7 @@ body > input[type="radio"] {
   width: 18px;
 }
 
-/* выезжает модальное окно и шейкер
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -2061,7 +2061,7 @@ body > input[type="radio"] {
     transform: translateX(10px);
   }
 }
-*/
+
 .modal {
   display: none;
   background-color: #f8f7f4;
