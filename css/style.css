@@ -617,7 +617,7 @@ h3 {
   flex-wrap: wrap;
 }
 
-.filters-sorting {
+.filters .filters-sorting {
   border: 0;
   width: 220px;
   margin-top: -4px;
@@ -658,7 +658,7 @@ h3 {
   line-height: 36px;
   color: #fff;
   background: rgba(255,255,255,.2) url(../img/11.png) no-repeat 166px 50%;
-  border: none;
+  border: 0;
   border-radius: 18px;
   outline: none;
   -moz-appearance: none;
@@ -1234,7 +1234,7 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
 }
 
 .logo-documents-index {
-  padding-top: 10px;
+  margin-top: 10px;
   margin-left: 4px;
 }
 
@@ -1457,7 +1457,7 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
 .main-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 29px;
+
   padding-bottom: 29px;
 }
 
@@ -1618,7 +1618,7 @@ font-size: 35px;
 }
 
 .row-4 {
-  margin-top: -1px;
+  margin-top: 29px;
   margin-right: 27px;
   margin-left: 27px;
 }
@@ -2009,6 +2009,7 @@ body > input[type="radio"] {
   width: 18px;
 }
 
+/* выезжает модальное окно и шейкер
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -2048,7 +2049,7 @@ body > input[type="radio"] {
     transform: translateX(10px);
   }
 }
-
+*/
 .modal {
   display: none;
   background-color: #f8f7f4;
@@ -2108,8 +2109,7 @@ body > input[type="radio"] {
   height: 44px;
   margin-top: 15px;
   margin-left: 290px;
-  position: absolute;
-  width: 139px;
+
 }
 
 .header-buttons input[type="text"],

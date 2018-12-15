@@ -1,12 +1,12 @@
 var link = document.querySelector(".login-link");
 
 var popup = document.querySelector(".modal-login");
-var close = document.querySelector(".popup-close");
+var close = popup.querySelector(".popup-close");
 
 var form = popup.querySelector("form");/*валидация формы*/
-var login = document.querySelector("[name=feedback-name]");/*фокус на логин при открытии модального окна*/
+var login = popup.querySelector("[name=feedback-name]");/*фокус на логин при открытии модального окна*/
 var email = popup.querySelector("[name=feedback-email]");
-var text = document.querySelector("[name=feedback-text]");
+var text = popup.querySelector("[name=feedback-text]");
 
 
 var isStorageSupport = true;/*включили поддержку localStorage во всех браузерах*/
@@ -23,10 +23,11 @@ link.addEventListener("click", function (evt) {
   popup.classList.add("modal-show");
 
   if (storage) {/*сохранили email в поле*/
+    login.value = storage;
     email.value = storage;
-    login.focus();
-  } else {
     text.focus();
+  } else {
+    login.focus();
   }
 });
 
@@ -45,8 +46,12 @@ form.addEventListener("submit", function (evt) {
     console.log("Нужно ввести логин, пароль и комментарий");
   }  else {
     if (isStorageSupport) {
-      localStorage.setItem("email", email.value);
-    }
+      localStorage.setItem("login", login.value);
+    } else {
+        if (isStorageSupport) {
+          localStorage.setItem("email", email.value);
+        } 
+      }
   }
 });
 

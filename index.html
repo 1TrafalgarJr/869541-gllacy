@@ -271,15 +271,15 @@
         <h3>Мы обязательно вам ответим!</h3>
         <button class="popup-close" type="button" title="Закрыть"></button>
         <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
-          <input id="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?" >
+          <input id="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?" required>
           <label  class="hiden-top" for="feedback-name">
             <span>Как вас зовут?</span>
           </label>
-          <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" >
+          <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
           <label  class="hiden-top" for="feedback-email">
             <span>Ваша почта для ответа?</span>
           </label>
-          <textarea name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea name="feedback-text" placeholder="Напишите что-нибудь..." required></textarea>
           <button class="btn btn-main modal-send">Отправить</button>
         </form>
       </div>
