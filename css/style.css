@@ -213,10 +213,11 @@ h3 {
 
 .bottom-right {
   bottom: 36px;
+  height: 44px;
   position: absolute;
   right: 21px;
   margin-right: 5px;
-  margin-bottom: 53px;
+  margin-bottom: 50px;
   margin-left: 0px;
   padding-left: 17px;
   padding-right: 18px;
@@ -1086,6 +1087,13 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
   height: 1px;
 }
 
+.site-navigation a:active {
+  background-color: #ededed;
+  border: 0;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  color: #323232;
+}
+
 .location {
   display: none;
   padding-top: 8px;
@@ -1381,6 +1389,11 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
   position: relative;
   margin-top: -51px;
 }
+
+iframe {
+  border: 0;
+}
+
 /*
 .map .ballon{
   background-image: url("../img/ice111.svg");
@@ -1591,7 +1604,6 @@ font-size: 35px;
   font-weight: 500;
   height: 26px;
   line-height: 26px;
-  margin: 0 0 0 5px;
   text-align: center;
   width: 26px;
 }
@@ -2125,7 +2137,7 @@ textarea {
   box-shadow: inset 0 0 1px #d3d3d2;
   border: 0;
   border-radius: 3px;
-  color: #d3d3d2;
+  color: #000;
   font-size: 16px;
   height: 44px;
   line-height: 24px;
@@ -2137,19 +2149,13 @@ input[type="text"]:hover,
 input[type="email"]:hover, 
 input[type="password"]:hover, 
 textarea:hover  {
-  border: 0;
-  border-radius: 3px;
-  color: #999;
-  box-shadow: inset 0 0 2px #d3d3d2;
+  box-shadow: inset 0 0 2px rgba(154, 154, 154, 0.52);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus, 
 input[type="password"]:focus, 
 textarea:focus {
-  border: 0;
   box-shadow: inset 0 0 2px rgba(46, 136, 228, 0.52);
-  border-radius: 3px;
-  color: #000;
 }
 
