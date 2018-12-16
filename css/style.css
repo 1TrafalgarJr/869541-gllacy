@@ -1418,6 +1418,13 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
   position: relative;
 }
 
+.map iframe {
+  width: 100%;
+  height: 430px;
+}
+
+
+
 iframe {
   border: 0;
 }
