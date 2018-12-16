@@ -676,13 +676,17 @@ select::-ms-expand {/*убрала стрелку в эксплорере*/
   display: none;
 }
 
-.filters select:hover,
+.filters select:hover {
+  color: #000;
+  background-image: url(../img/black.png);
+}
 .filters select:active,
-.filters select:focus  {
+.filters select:focus {
   color: #000;
   background-color: #fff;
   background-image: url(../img/black.png);
 }
+
 
 .filters-price-range {
   border: 0;
