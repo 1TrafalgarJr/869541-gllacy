@@ -23,7 +23,7 @@
                 <ul class="site-navigation">
                   <li class="navigation-li">
                     <a href="#" class="line">Каталог</a>
-                    <ul class="main-navigation-ul" style="margin-top: 7px">
+                    <ul class="main-navigation-ul">
                       <li><a class="main-navigation-span" href="#">Новинки</a></li>
                       <li><a class="none font" href="catalog.html">Сливочное</a></li>
                       <li><a class="none font" href="#">Щербеты</a></li>
@@ -48,7 +48,7 @@
                     <div class="search-form">
                       <form class="search search-input" method="post" action="https://echo.htmlacademy.ru">
                         <input type="text" id="search" name="search" placeholder="Что ищем?">
-                        <label class="hiden" for="search">Что ищем?</label>
+                        <label class="hidden" for="search">Что ищем?</label>
                       </form>
                     </div>
                   </div>  
@@ -62,11 +62,11 @@
                       <form class="user" method="post" action="https://echo.htmlacademy.ru">
                         <div class="input-field">
                           <input id="user-email" type="email" name="email" placeholder="Электронная почта" required>
-                          <label  class="hiden" for="user-email">Электронная почта</label>
+                          <label  class="hidden" for="user-email">Электронная почта</label>
                         </div>
                         <div class="input-field">
                           <input id="user-password" type="password" name="password" placeholder="Пароль" required>
-                          <label  class="hiden" for="user-password">Пароль</label>
+                          <label  class="hidden" for="user-password">Пароль</label>
                         </div>
                         <div class="send-data">
                           <button class="btn btn-main" type="submit">Войти</button>
@@ -93,15 +93,15 @@
         <main class="main-content">
           <div class="slider-main">
             <div class="slide" id="slide1">
-              <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+              <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
               <a href="#" class="btn btn-main none">Давайте оба!</a>
             </div>
-            <div class="slide hiden" id="slide2">
-              <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+            <div class="slide hidden" id="slide2">
+              <p class="slide-title">Шоколадный пломбир и лимонный сорбет</p>
               <a href="#" class="btn btn-main none">Давайте оба!</a>
             </div>
-            <div class="slide hiden" id="slide3">
-              <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+            <div class="slide hidden" id="slide3">
+              <p class="slide-title">Пломбир с помадкой и клубничный щербет</p>
               <a href="#" class="btn btn-main none">Давайте оба!</a>
             </div>
             <div class="slides-switches">
@@ -110,23 +110,21 @@
               <label for="product-3"></label>
             </div>
           </div>
-          <div class="row">
-            <div class="banners">
-              <div class="col-right col-6">
-                <section class="banner banner-left">
-                  <h2>Малинка даром!</h2>
-                  <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                  <a href="#" class="btn btn-main btn-right">Хочу варенье!</a>
-                </section>
-              </div>
-              <div class="col col-6"> 
-                <section class="banner banner-right">
-                  <h2>Шоколадки даром!</h2>
-                  <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
-                  <a href="#" class="btn btn-main btn-right">Хочу шоколадки!</a>
-                </section>
-              </div>  
+          <div class="banners row">
+            <div class="col-right col-6">
+              <section class="banner banner-left">
+                <h2>Малинка даром!</h2>
+                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <a href="#" class="btn btn-main btn-right">Хочу варенье!</a>
+              </section>
             </div>
+            <div class="col col-6"> 
+              <section class="banner banner-right">
+                <h2>Шоколадки даром!</h2>
+                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
+                <a href="#" class="btn btn-main btn-right">Хочу шоколадки!</a>
+              </section>
+            </div>  
           </div>
           <div class="row-3">
             <div class="main-products-1">
@@ -143,7 +141,7 @@
                   <h3 class="style-line">
                     <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a> 
                   </h3>
-                  <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                  <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                 </div>
               </div>
               <div class="item-hover item-hover-hit">
@@ -156,10 +154,10 @@
                     <span>₽</span>
                     <span class="kilo">/кг</span>
                   </p>
-                  <h3 class="description">
+                  <h3 class="style-line">
                     <a href="#">Сливочно-кофейное с кусочками шоколада</a> 
                   </h3>
-                  <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                  <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                 </div>
               </div>
               <div class="item-hover item-hover-hit">
@@ -172,10 +170,10 @@
                     <span>₽</span>
                     <span class="kilo">/кг</span>
                   </p>
-                  <h3>
+                  <h3 class="style-line">
                     <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                   </h3>
-                  <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                  <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                 </div>
               </div>
               <div class="item-hover item-hover-hit">
@@ -188,10 +186,10 @@
                     <span>₽</span>
                     <span class="kilo">/кг</span>
                   </p>
-                  <h3>
+                  <h3 class="style-line">
                     <a href="#">Сливочное крем-брюле с карамельной подливкой</a> 
                   </h3>
-                  <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                  <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                 </div>
               </div>
             </div>
@@ -200,7 +198,7 @@
             <div class="col-center col-12">
               <section class="section-content">
                 <!--фон через css-->
-                <h2 class="visually-hidden hiden">Описание магазина Глэйси</h2>
+                <h2 class="visually-hidden hidden">Описание магазина Глэйси</h2>
                 <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
                 <ul class="list-center">
                   <li class="text-left">Все наше мороженое изготовляется на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -215,7 +213,7 @@
             <div class="banners">
               <div class="col-right col-6">
                 <article class="main-bottom blog">
-                  <p>Новое в нашем блоге</p>
+                  <h3>Новое в нашем блоге</h3>
                   <a href="#">
                     <span>10 способов сервировки</span><br>
                     <span>фруктовых щербетов к</span><br>
@@ -226,11 +224,11 @@
               <div class="col col-6">
                 <div class="main-background">
                   <div class="additional-background">
-                    <h2 class="visually-hidden hiden">Рассылка новостей</h2>
+                    <h3 class="visually-hidden hidden">Рассылка новостей</h3>
                     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                     <form class="form-section" method="post" action="https://echo.htmlacademy.ru">
                       <input id="email" type="email" name="email" placeholder="Электронная почта" required>
-                      <label  class="hiden" for="email">Электронная почта</label>
+                      <label  class="hidden" for="email">Электронная почта</label>
                       <button class="btn btn-main bottom-right">Отправить</button>
                     </form>
                   </div>
@@ -240,13 +238,9 @@
           </div>
         </main>
       </div>
-      <h2 class="visually-hidden hiden">Как до нас добраться?</h2>
+      <h2 class="visually-hidden hidden">Как до нас добраться?</h2>
       <div class="map" aria-label="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <iframe src="https://yandex.ru/map-widget/v1/-/CBF5NNAk3A"></iframe>
-        <!-- <div class="ballon"></div>
-        <div class="shadow"></div>
-        --карта
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBF5NNAk3A" width="1200" height="430" frameborder="1" allowfullscreen="true"></iframe>-->
         <div class="container-1">
           <section class="map-information">
             <p class="site-info">
@@ -269,15 +263,15 @@
 
       <div class="modal modal-login">
         <h3>Мы обязательно вам ответим!</h3>
-        <button class="popup-close" type="button" title="Закрыть"></button>
+        <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
         <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
           <input id="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
-          <label  class="hiden-top" for="feedback-name">
-            <span>Как вас зовут?</span>
+          <label  class="hidden-top" for="feedback-name">
+            Как вас зовут?
           </label>
           <input id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
-          <label  class="hiden-top" for="feedback-email">
-            <span>Ваша почта для ответа?</span>
+          <label  class="hidden-top" for="feedback-email">
+            Ваша почта для ответа?
           </label>
           <textarea name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
           <button class="btn btn-main modal-send">Отправить</button>

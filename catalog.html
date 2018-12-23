@@ -47,7 +47,7 @@
                     <div class="search-form">
                       <form class="search search-input" method="post" action="https://echo.htmlacademy.ru">
                         <input type="text" id="search" name="search" placeholder="Что ищем?">
-                        <label class="hiden" for="search">Что ищем?</label>
+                        <label class="hidden" for="search">Что ищем?</label>
                       </form>
                     </div>
                   </div>  
@@ -61,11 +61,11 @@
                       <form class="user" method="post" action="https://echo.htmlacademy.ru">
                         <div class="input-field">
                           <input id="user-email" type="email" name="email" placeholder="Электронная почта" required>
-                          <label  class="hiden" for="user-email">Электронная почта</label>
+                          <label  class="hidden" for="user-email">Электронная почта</label>
                         </div>
                         <div class="input-field">
                           <input id="user-password" type="password" name="password" placeholder="Пароль" required>
-                          <label  class="hiden" for="user-password">Пароль</label>
+                          <label  class="hidden" for="user-password">Пароль</label>
                         </div>
                         <div class="send-data">
                           <button class="btn btn-main" type="submit">Войти</button>
@@ -136,11 +136,12 @@
                 <li><a>Сливочное</a></li>
               </ul>
               <h1 class="page-title">Сливочное мороженое</h1>
-              <h2 class="visually-hidden hiden">Фильтр товаров</h2>
+              <h2 class="visually-hidden hidden">Фильтр товаров</h2>
               <form class="filters" method="post" action="https://echo.htmlacademy.ru">
                 <fieldset class="filters-sorting">
                   <legend>Сортировка:</legend>
-                  <select class="sorting">
+                  <label for="select1"></label>
+                  <select class="sorting" name="sorting" id="select1">
                     <option value="popularity">по полулярности</option>
                     <option value="first-cheap">сначала недорогие</option>
                     <option value="first-dear">сначала дорогие</option>
@@ -214,7 +215,7 @@
             </div>
             <div class="row-2">
               <div class="main-products">
-                <h2 class="visually-hidden hiden">Список сливочного мороженого</h2>
+                <h2 class="visually-hidden hidden">Список сливочного мороженого</h2>
                 <div class="item-hover">
                   <div class="col col-3">                 
                     <a href="#">
@@ -225,10 +226,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3>
+                    <h3 class="style-line">
                       <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a> 
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site"aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -241,10 +242,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3>
+                    <h3 class="style-line">
                       <a href="#">Сливочно-кофейное с кусочками шоколада</a> 
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site"aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -257,10 +258,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3>
+                    <h3 class="style-line">
                       <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -273,10 +274,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3>
+                    <h3 class="style-line">
                       <a href="#">Сливочное крем-брюле с карамельной подливкой</a> 
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -289,10 +290,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3 class="padding">
+                    <h3 class="padding style-line">
                       <a href="#">Сливочное с брусничным джемом</a> 
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -305,10 +306,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3>
+                    <h3 class="style-line">
                       <a href="#">Сливочно-черничное с цельными ягодами черники</a> 
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -321,10 +322,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3>
+                    <h3 class="style-line">
                       <a href="#">Сливочно-лимонное с карамельной присыпкой</a> 
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -337,10 +338,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3>
+                    <h3 class="style-line">
                       <a href="#">Сливочное с шоколадной стружкой</a>
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -353,10 +354,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3 class="paddings">
+                    <h3 class="paddings style-line">
                       <a href="#">Сливочно-ванильное с кусочками шоколада</a> 
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -369,10 +370,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3>
+                    <h3 class="style-line">
                       <a href="#">Сливочное с ментоловым сиропом</a> 
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -385,10 +386,10 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3>
+                    <h3 class="style-line">
                       <a href="#">Сливочное с кусочками черного шоколада</a> 
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
                 <div class="item-hover">
@@ -401,22 +402,22 @@
                       <span>₽</span>
                       <span class="kilo">/кг</span>
                     </p>
-                    <h3>
-                      <a href="#">Сливочное с мятным сиропом</a> 
+                    <h3 class="style-line">
+                      <a href="#">Сливочное с мятным сиропом</a>
                     </h3>
-                    <a class="btn btn-hover btn-site" href="#" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                    <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
                   </div>
                 </div>
               </div>
             </div>
             <ul class="pagination-list">
-              <li><a href="#"><img src="img/right.png" width="8" height="12" alt="Left"></a></li>
+              <li><a href="#"><img src="img/right.png" width="8" height="12" alt="Предыдущая страница"></a></li>
               <li class="pagination-item pagination-item-current"><a class="link">1</a></li>
               <li class="pagination-item"><a href="#" class="link">2</a></li>
               <li class="pagination-item"><a href="#" class="link">3</a></li>
               <li class="pagination-item"><a href="#" class="link">4</a></li>
               <li class="pagination-item"><a href="#" class="link">5</a></li>
-              <li class="pagination-item"><a href="#"><img src="img/left.png" width="8" height="12" alt="left line"></a></li>
+              <li class="pagination-item"><a href="#"><img src="img/left.png" width="8" height="12" alt="Следующая страница"></a></li>
             </ul>
           </div>
         </main>
