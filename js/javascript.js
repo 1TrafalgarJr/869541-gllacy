@@ -3,8 +3,8 @@ var link = document.querySelector('.login-link');
 var popup = document.querySelector('.modal-login');
 var close = popup.querySelector('.popup-close');
 
-var form = popup.querySelector('form');/*валидация формы*/
-var login = popup.querySelector('[name=feedback-name]');/*фокус на логин при открытии модального окна*/
+var form = popup.querySelector('form');
+var login = popup.querySelector('[name=feedback-name]');
 var email = popup.querySelector('[name=feedback-email]');
 var text = popup.querySelector('[name=feedback-text]');
 
@@ -21,7 +21,7 @@ link.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.add('modal-show');
 
-  if (isStorageSupport) {/*сохранили email в поле*/
+  if (isStorageSupport) {
     login.value = localStorage.getItem('login');
     email.value = localStorage.getItem('email');
     text.focus();
@@ -31,7 +31,7 @@ link.addEventListener('click', function (evt) {
 });
 
 close.addEventListener('click', function (evt) {
-  //evt.preventDefault();
+  evt.preventDefault();
   popup.classList.remove('modal-show');
   popup.classList.remove('modal-error');
 });
