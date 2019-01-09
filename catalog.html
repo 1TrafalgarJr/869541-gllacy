@@ -5,7 +5,7 @@
     <title>Gllacy Shop</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900&amp;subset=cyrillic,cyrillic-ext">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style-normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/min-style.css">
   </head>
   <body>
     <div class="slider-main-phone catalog-page">
@@ -20,15 +20,17 @@
                   </a>
                 </div>
                 <ul class="site-navigation">
-                  <li class="navigation-li">
-                    <a href="#" class="line active">Каталог</a>
-                    <ul class="main-navigation-ul">
-                      <li><a class="main-navigation-span" href="#">Новинки</a></li>
-                      <li><a class="none font active" href="catalog.html">Сливочное</a></li>
-                      <li><a class="none font" href="#">Щербеты</a></li>
-                      <li><a class="none font" href="#">Фруктовый лёд</a></li>
-                      <li><a class="none font" href="#">Мелорин</a></li>
-                    </ul>
+                  <li class="navigation-li navigation-li-active">
+                    <a href="#" class="line active active-red">Каталог</a>
+                    <div class="hidden-open">
+                      <ul class="main-navigation-ul">
+                        <li><a class="main-navigation-span" href="#">Новинки</a></li>
+                        <li><a class="none font active" href="catalog.html">Сливочное</a></li>
+                        <li><a class="none font" href="#">Щербеты</a></li>
+                        <li><a class="none font" href="#">Фруктовый лёд</a></li>
+                        <li><a class="none font" href="#">Мелорин</a></li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="navigation-li">
                     <a href="#" class="line">Доставка и оплата</a>
@@ -38,84 +40,97 @@
                   </li>
                 </ul>
               </nav>
-              <div class="header-buttons">
-                <div class="header-button">
-                  <button type="button" class=" btn-top btn-search">
-                    <i class="icon icon-search"></i>Поиск
-                  </button>
-                  <div class="location">
-                    <div class="search-form">
-                      <form class="search search-input" method="post" action="https://echo.htmlacademy.ru">
-                        <input class="form-control" type="text" id="search" name="search" placeholder="Что ищем?">
-                        <label class="hidden" for="search">Что ищем?</label>
-                      </form>
-                    </div>
-                  </div>  
+              <div class="wrapper search-wrapper">
+                <a  class="search" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+                    <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"></path>
+                  </svg>
+                </a>
+                <div class="hidden-open">
+                  <div class="search-form">
+                    <form class="search search-input" method="post" action="https://echo.htmlacademy.ru">
+                      <input class="form-control" type="text" id="search" name="search" placeholder="Что ищем?">
+                      <label class="hidden" for="search">Что ищем?</label>
+                    </form>
+                  </div>
                 </div>
-                <div class="header-button">
-                  <button type="button" class="bth btn-top btn-fix">
-                    <i class="icon icon-login"></i>Вход
-                  </button>
-                  <div class="location">
-                    <div class="login-user">
-                      <form class="user" method="post" action="https://echo.htmlacademy.ru">
-                        <div class="input-field">
-                          <input class="form-control" id="user-email" type="email" name="email" placeholder="Электронная почта" required>
-                          <label  class="hidden" for="user-email">Электронная почта</label>
-                        </div>
-                        <div class="input-field">
-                          <input class="form-control" id="user-password" type="password" name="password" placeholder="Пароль" required>
-                          <label class="hidden" for="user-password">Пароль</label>
-                        </div>
-                        <div class="send-data">
-                          <button class="btn btn-main" type="submit">Войти</button>
-                          <a href="#" class="restore">Забыли пароль?</a>
-                          <a href="#" class="new-registration">Новая регистрация</a>
-                        </div>
-                      </form>
-                    </div>
-                  </div>  
+              </div>
+              <div class="wrapper login-wrapper">
+                <a class="login" href="#">
+                  Вход
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19">
+                    <g fill="#FFF">
+                      <path d="M6 14.88l6.92-5.38L6 4.12v2.92H-.04v4.92H6z"></path>
+                      <path d="M18 0H5a2 2 0 0 0-2 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <div class="hidden-open">
+                  <div class="login-user">
+                    <form class="user" method="post" action="https://echo.htmlacademy.ru">
+                      <div class="input-field">
+                        <input class="form-control" id="user-email" type="email" name="email" placeholder="Электронная почта" required="">
+                        <label class="hidden" for="user-email">Электронная почта</label>
+                      </div>
+                      <div class="input-field">
+                        <input class="form-control" id="user-password" type="password" name="password" placeholder="Пароль" required="">
+                        <label class="hidden" for="user-password">Пароль</label>
+                      </div>
+                      <div class="send-data">
+                        <button class="btn btn-main" type="submit">Войти</button>
+                        <a href="#" class="restore">Забыли пароль?</a>
+                        <a href="#" class="new-registration">Новая регистрация</a>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-                <div class="header-button">
-                  <button type="button" class="btn btn-top btn-fix">
-                    <i class="icon icon-bask"></i>2 товара
-                  </button>
-                  <div class="location">
-                    <div class="buttons-form buttons-form-basket">
-                      <div class="basket-hidden">
-                        <button class="basket-item-delete"></button>
-                        <div class="basket-name-merchandise">
-                          <img src="img/1-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                          <span>Пломбир с апельсиновым джемом</span>
-                        </div>
-                        <div class="basket-quantity-merchandise">
-                          1,5 кг х
-                          <span class="kg">200 руб.</span>
-                        </div>
-                        <div class="basket-worth">
-                          300 руб.
-                        </div>
-                      </div> 
-                      <div class="basket-hidden basket-hidden-last">
-                        <button class="basket-item-delete"></button>
-                        <div class="basket-name-merchandise">
-                          <img src="img/2-1.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                          <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-                        </div>
-                        <div class="basket-quantity-merchandise">
-                          1,5 кг х
-                          <span class="kg">300 руб.</span>
-                        </div>
-                        <div class="basket-worth">
-                          450 руб.
-                        </div>
+              </div>
+              <div class="wrapper basket-wrapper">
+                <a class="basket basket-phone" href="#">
+                  2 товара
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+                    <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"></path>
+                    <circle fill="#343434" cx="6.984" cy="18" r="2"></circle>
+                    <circle fill="#343434" cx="15.984" cy="18" r="2"></circle>
+                    <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"></path>
+                  </svg>
+                </a>
+                <div class="hidden-open">
+                  <div class="buttons-form buttons-form-basket">
+                    <div class="basket-hidden">
+                      <button class="basket-item-delete"></button>
+                      <div class="basket-name-merchandise">
+                        <img src="img/1-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                        <span>Пломбир с апельсиновым джемом</span>
                       </div>
-                      <div class="counting">
-                        <div class="basket-total">
-                          Итого: 750руб.
-                        </div>
-                        <a href="#" class="btn btn-main none">Оформить заказ</a>
+                      <div class="basket-quantity-merchandise">
+                        1,5 кг х
+                        <span class="kg">200 руб.</span>
                       </div>
+                      <div class="basket-worth">
+                        300 руб.
+                      </div>
+                    </div> 
+                    <div class="basket-hidden basket-hidden-last">
+                      <button class="basket-item-delete"></button>
+                      <div class="basket-name-merchandise">
+                        <img src="img/2-1.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                        <span>Клубничный пломбир с присыпкой из белого шоколада</span>
+                      </div>
+                      <div class="basket-quantity-merchandise">
+                        1,5 кг х
+                        <span class="kg">300 руб.</span>
+                      </div>
+                      <div class="basket-worth">
+                        450 руб.
+                      </div>
+                    </div>
+                    <div class="counting">
+                      <div class="basket-total">
+                        Итого: 750руб.
+                      </div>
+                      <a href="#" class="btn btn-main none">Оформить заказ</a>
                     </div>
                   </div>
                 </div>
@@ -225,19 +240,19 @@
                   <h3 class="style-line">
                     <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a> 
                   </h3>
-                  <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                  <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                 <p class="item-price">
                   <span>380</span>
                   <span>₽</span>
-                  <span class="kilo">/кг</span>
+                  <span class="kilo">/кг</span> 
                 </p>
                 <h3 class="style-line">
                   <a href="#">Сливочно-кофейное с кусочками шоколада</a> 
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -249,7 +264,7 @@
                 <h3 class="style-line">
                   <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -261,7 +276,7 @@
                 <h3 class="style-line">
                   <a href="#">Сливочное крем-брюле с карамельной подливкой</a> 
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
@@ -273,7 +288,7 @@
                 <h3 class="padding style-line">
                   <a href="#">Сливочное с брусничным джемом</a> 
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
@@ -285,7 +300,7 @@
                 <h3 class="style-line">
                   <a href="#">Сливочно-черничное с цельными ягодами черники</a> 
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
@@ -297,7 +312,7 @@
                 <h3 class="style-line">
                   <a href="#">Сливочно-лимонное с карамельной присыпкой</a> 
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
@@ -309,7 +324,7 @@
                 <h3 class="style-line">
                   <a href="#">Сливочное с шоколадной стружкой</a>
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
@@ -321,7 +336,7 @@
                 <h3 class="paddings style-line">
                   <a href="#">Сливочно-ванильное с кусочками шоколада</a> 
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
@@ -333,7 +348,7 @@
                 <h3 class="style-line">
                   <a href="#">Сливочное с ментоловым сиропом</a> 
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/11-1.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
@@ -345,7 +360,7 @@
                 <h3 class="style-line">
                   <a href="#">Сливочное с кусочками черного шоколада</a> 
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
               <div class="item-hover">
                 <img src="img/12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
@@ -357,7 +372,7 @@
                 <h3 class="style-line">
                   <a href="#">Сливочное с мятным сиропом</a>
                 </h3>
-                <button class="btn btn-hover btn-site" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+                <a class="btn btn-hover btn-site" href="#">Быстрый просмотр</a>
               </div>
             </div>
             <ul class="pagination-list">
