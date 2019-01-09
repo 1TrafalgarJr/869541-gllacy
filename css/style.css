@@ -439,10 +439,6 @@ body {
   display: none;
 }
 
-.basket-wrapper {
-  margin-right: 6px;
-}
-
 .counting {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1792,7 +1788,7 @@ body {
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
-  margin-top: -1px;
+  margin-top: 0;
   margin-left: -5px;
   margin-bottom: 30px;
 }
@@ -2424,8 +2420,12 @@ body {
 .wrapper {
   position: relative;
   margin-top: 15px;
-  margin-right: 9px;
+  margin-right: 10px;
   height: 33px;
+}
+
+.basket-wrapper {
+  margin-right: 4px;
 }
 
 .wrapper:hover .hidden-open {
