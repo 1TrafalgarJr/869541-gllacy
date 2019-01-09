@@ -2477,6 +2477,10 @@ body {
   background-color: #fff;
 }
 
+.basket-phone:hover {
+  background-position: 17%;
+}
+
 #product-1:checked ~ .slider-main-phone #slide1,
 #product-2:checked ~ .slider-main-phone #slide2,
 #product-3:checked ~ .slider-main-phone #slide3 {
